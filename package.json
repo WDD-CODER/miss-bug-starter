@@ -1,0 +1,27 @@
+{
+  "name": "miss-bug-starter-react",
+  "version": "1.0.0",
+  "description": "my homeWork project",
+  "type": "module",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrfrn/miss-bug-starter-react.git"
+  },
+  "author": "Dan Weibren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrfrn/miss-bug-starter-react/issues"
+  },
+  "homepage": "https://github.com/shrfrn/miss-bug-starter-react#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
