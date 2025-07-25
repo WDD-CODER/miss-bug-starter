@@ -26,7 +26,6 @@ app.get('/api/bug/save', (req, res) => {
         _id,
         description,
     }
-    console.log("🚀 ~ bug:", bug)
 
     bugService.save(bug)
         .then(savedBug => res.send(savedBug))

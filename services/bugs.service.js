@@ -32,13 +32,10 @@ function remove(bugId) {
 
 
 function save(bugToSave) {
-    console.log("🚀 ~ save ~ bugToSave:", bugToSave)
     
-    console.log("🚀 ~ save ~ bugToSave._id:", bugToSave._id)
     if (bugToSave._id) {
         // bug.id = _id
         const idx = bugs.findIndex(bug => bug._id === bugToSave._id)
-        console.log("🚀 ~ save ~ idx:", idx)
         bugs.splice(idx, 1, bugToSave)
     }
     else {

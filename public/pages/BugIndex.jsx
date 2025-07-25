@@ -12,14 +12,14 @@ export function BugIndex() {
 
     useEffect(loadBugs, [filterBy])
 
-    function loadBugs() {        
+    function loadBugs() {
         bugService.query(filterBy)
             .then(setBugs)
             .catch(err => showErrorMsg(`Couldn't load bugs - ${err}`))
     }
 
     function onRemoveBug(bugId) {
-        
+
         bugService.remove(bugId)
             .then(() => {
                 const bugsToUpdate = bugs.filter(bug => bug._id !== bugId)
@@ -32,7 +32,8 @@ export function BugIndex() {
     function onAddBug() {
         const bug = {
             title: prompt('Bug title?', 'Bug ' + Date.now()),
-            severity: +prompt('Bug severity?', 3)
+            severity: +prompt('Bug severity?', 3),
+            description: prompt('What Happened?', 'What did the bug cause')
         }
 
         bugService.save(bug)
@@ -48,7 +49,6 @@ export function BugIndex() {
         const description = prompt('What Happened?', 'What did the bug cause')
 
         const bugToSave = { ...bug, severity, description }
-        console.log("🚀 ~ onEditBug ~ bugToSave:", bugToSave)
 
         bugService.save(bugToSave)
             .then(savedBug => {
@@ -66,16 +66,16 @@ export function BugIndex() {
     }
 
     return <section className="bug-index main-content">
-        
+
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
-        
-        <BugList 
-            bugs={bugs} 
-            onRemoveBug={onRemoveBug} 
+
+        <BugList
+            bugs={bugs}
+            onRemoveBug={onRemoveBug}
             onEditBug={onEditBug} />
     </section>
 }
