@@ -1,0 +1,13 @@
+.bug-filter {
+    background-color: var(--gray2);
+    padding: 1em;
+}
+
+.bug-filter h2 {
+    margin-bottom: .5em;
+}
+
+.bug-filter label {
+    margin-inline-start: 1em;
+}
+

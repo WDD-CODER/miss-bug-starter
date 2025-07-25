@@ -1,0 +1,17 @@
+@import './setup/reset.css';
+@import './setup/vars.css';
+@import './setup/base.css';
+@import './setup/layout.css';
+
+@import './cmps/Home.css';
+@import './cmps/AboutUs.css';
+@import './cmps/BugIndex.css';
+@import './cmps/BugDetails.css';
+
+@import './cmps/AppHeader.css';
+@import './cmps/AppFooter.css';
+@import './cmps/UserMsg.css';
+
+@import './cmps/BugList.css';
+@import './cmps/BugFilter.css';
+@import './cmps/BugPreview.css';
