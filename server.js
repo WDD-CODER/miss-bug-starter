@@ -33,7 +33,7 @@ app.get('/api/bug/save', (req, res) => {
 
 app.get('/api/bug/:bugId', (req, res) => {
     const bugId = req.params.bugId
-    bugService.getById(bugId + 1)
+    bugService.getById(bugId)
         .then(bug =>  res.send(bug))
         .catch(err => {
             loggerService.error(err)

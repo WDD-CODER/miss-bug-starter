@@ -15,8 +15,6 @@ export const bugService = {
 }
 
 function query(filterBy) {
-console.log('query')
-
     return axios.get(BASE_URL)
         .then(res => res.data)
         .then(bugs => {
@@ -34,24 +32,31 @@ console.log('query')
         })
 }
 
-function getById(bugId) {    
-    return axios.get(BASE_URL, bugId)
+function getById(bugId) {
+    return axios.get(`${BASE_URL}/${bugId}`)
         .then(res => res.data)
 }
 
 function remove(bugId) {
-    return storageService.remove(STORAGE_KEY, bugId)
+    return axios.get(`${BASE_URL}/${bugId}/remove`)
+        .then(res => res.data)
 }
-
+// {title: '404 Coffee Not Found', severity: 9999999999, _id: 'C0FF33'}
+// severity
+// : 
+// 9999999999
+// title
+// : 
+// "404 Coffee Not Found"
+// _id
+// : 
+// "C0FF33"
 function save(bug) {
-    if (bug._id) {
-        return storageService.put(STORAGE_KEY, bug)
-    } else {
-        return storageService.post(STORAGE_KEY, bug)
-    }
+    var queryStr = `/save?title=${bug.title}&severity=${bug.severity}`
+    if (bug._id) queryStr += `&_id=${bug._id}`
+        return axios.get(BASE_URL + queryStr)
+            .then(res =>  res.data)
 }
-
-
 
 function getDefaultFilter() {
     return { txt: '', minSeverity: 0 }

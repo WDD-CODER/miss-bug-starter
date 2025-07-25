@@ -1,22 +1,22 @@
 [
     {
         "title": "Infinite Loop Detected",
-        "severity": 5555,
+        "severity": 144,
         "_id": "1NvvN153"
     },
     {
-        "title": "my_bug",
-        "severity": 444,
-        "_id": "K3YB0RD"
-    },
-    {
         "title": "404 Coffee Not Found",
-        "severity":9999999999,
+        "severity": 1,
         "_id": "C0FF33"
     },
     {
         "title": "my_bug",
         "severity": 666,
         "_id": "iLuU3b"
+    },
+    {
+        "title": "Bug 1753439334143",
+        "severity": 3,
+        "_id": "3aY3Av"
     }
 ]

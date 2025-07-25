@@ -35,8 +35,10 @@ export function BugIndex() {
             severity: +prompt('Bug severity?', 3)
         }
 
+        console.log("🚀 ~ onAddBug ~ bug:", bug)
         bugService.save(bug)
             .then(savedBug => {
+                console.log("🚀 ~ onAddBug ~ savedBug:", savedBug)
                 setBugs([...bugs, savedBug])
                 showSuccessMsg('Bug added')
             })
