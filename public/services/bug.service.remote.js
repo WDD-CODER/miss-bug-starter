@@ -1,9 +1,6 @@
-// import {  } from './util.service.js'
 import { storageService } from './async-storage.service.js'
 
 const BASE_URL = '/api/bug'
-
-
 
 
 export const bugService = {
@@ -41,21 +38,15 @@ function remove(bugId) {
     return axios.get(`${BASE_URL}/${bugId}/remove`)
         .then(res => res.data)
 }
-// {title: '404 Coffee Not Found', severity: 9999999999, _id: 'C0FF33'}
-// severity
-// : 
-// 9999999999
-// title
-// : 
-// "404 Coffee Not Found"
-// _id
-// : 
-// "C0FF33"
+
 function save(bug) {
+    console.log("🚀 ~ save ~ bug:", bug)
     var queryStr = `/save?title=${bug.title}&severity=${bug.severity}`
     if (bug._id) queryStr += `&_id=${bug._id}`
+    if (bug.description) queryStr += `&description=${bug.description}`
+        console.log("🚀 ~ save ~ queryStr:", queryStr)
         return axios.get(BASE_URL + queryStr)
-            .then(res =>  res.data)
+            .then(res => res.data)
 }
 
 function getDefaultFilter() {

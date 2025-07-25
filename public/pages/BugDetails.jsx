@@ -11,10 +11,7 @@ export function BugDetails() {
 
     useEffect(() => {
         bugService.getById(bugId)
-            .then(bug =>{
-                console.log('bug', bug)
-                
-                return setBug(bug)})
+            .then(bug =>setBug(bug))
             .catch(err => showErrorMsg(`Cannot load bug`, err))
     }, [])
 
@@ -22,10 +19,11 @@ export function BugDetails() {
         <h3>Bug Details</h3>
         {!bug && <p className="loading">Loading....</p>}
         {
-            bug && 
+            bug &&
             <div>
                 <h4>{bug.title}</h4>
                 <h5>Severity: <span>{bug.severity}</span></h5>
+                <h5 className="description">Description :{bug.description}</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse facilis vitae numquam architecto mollitia fugiat culpa minima aperiam amet sapiente, voluptate sit, in nemo ea. Expedita iure tempore explicabo?</p>
             </div>
         }

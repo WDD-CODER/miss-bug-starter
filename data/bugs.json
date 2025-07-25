@@ -7,16 +7,21 @@
     {
         "title": "404 Coffee Not Found",
         "severity": 1,
-        "_id": "C0FF33"
+        "_id": "C0FF33",
+        "description": "What did the bug cause"
     },
     {
         "title": "my_bug",
-        "severity": 666,
-        "_id": "iLuU3b"
+        "severity": 99,
+        "_id": "iLuU3b",
+        "description": "What did the bug cause"
     },
     {
-        "title": "Bug 1753439334143",
+        "title": "Bug 1753439550398",
         "severity": 3,
-        "_id": "3aY3Av"
+        "_id": [
+            "rNBPPa",
+            "What did the bug cause"
+        ]
     }
 ]
