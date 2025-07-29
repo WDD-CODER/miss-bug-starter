@@ -5,10 +5,10 @@ import { loggerService } from './services/logger.service.js'
 const app = express()
 
 app.use(express.static('public'))
+// app.get('/nono',(req, res) => res.redirect('/'))
+
 
 app.get('/api/bug', (req, res) => {
-    
-// C:\קודינג אקדמי\Lesson38-NodeServer\miss-bug\miss-bug-starter\index.html
     bugService.query()
         .then(bugs => {res.send(bugs)})
         .catch(err => {
@@ -19,7 +19,6 @@ app.get('/api/bug', (req, res) => {
 
 app.get('/api/bug/save', (req, res) => {
     const { title, severity, _id, description } = req.query
-
     const bug = {
         title,
         severity: +severity,
@@ -40,7 +39,6 @@ app.get('/api/bug/:bugId', (req, res) => {
             loggerService.error(err)
             res.status(400).send(err)
         })
-
 })
 
 app.get('/api/bug/:bugId/remove', (req, res) => {
@@ -51,8 +49,8 @@ app.get('/api/bug/:bugId/remove', (req, res) => {
             loggerService.error(err)
             res.status(400).send("Couldn't find bug to remove")
         })
-
-
 })
+
+
 const port = 3030
 app.listen(port, () => loggerService.info(`Server listening on port http://127.0.0.1:${port}/`))
