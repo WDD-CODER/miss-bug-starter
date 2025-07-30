@@ -1,7 +1,7 @@
 import { loggerService } from './logger.service.js'
 import { makeId, readJsonFile, writeJsonFile } from './util.service.js'
 
-const bugs = readJsonFile('./data/bugs.json')
+var bugs = readJsonFile('./data/bugs.json')
 
 export const bugService = {
     query,
