@@ -15,9 +15,11 @@ function query() {
 }
 
 function getById(bugId) {
+    console.log('Looking for bugId:', bugId)
+    console.log('Available IDs:', bugs.map(b => b._id))
+
     const bug = bugs.find(bug => bug._id === bugId)
     if (!bug) {
-        loggerService.error(`Couldn't find  Bugs id ${bugId} in bugs array`)
         return Promise.reject("can't find bug")
     }
     return Promise.resolve(bug)
@@ -25,6 +27,7 @@ function getById(bugId) {
 
 function remove(bugId) {
     const idx = bugs.findIndex(bug => bug._id === bugId)
+    if (idx === -1) return Promise.reject("can't find bug to remove")
     bugs.splice(idx, 1)
 
     return _saveBugs()
@@ -32,15 +35,15 @@ function remove(bugId) {
 
 
 function save(bugToSave) {
-    
+
     if (bugToSave._id) {
         const idx = bugs.findIndex(bug => bug._id === bugToSave._id)
-        bugs = {...bugs[idx],...bugToSave}
+        bugs = { ...bugs[idx], ...bugToSave }
     }
     else {
         bugToSave._id = makeId()
         bugToSave.created = Date.now()
-        bugs.push(bugToSave)
+        bugs.unshift(bugToSave)
     }
 
     return _saveBugs()

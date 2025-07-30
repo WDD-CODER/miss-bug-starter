@@ -7,7 +7,6 @@ const app = express()
 app.use(express.static('public'))
 // app.get('/nono',(req, res) => res.redirect('/'))
 
-
 app.get('/api/bug', (req, res) => {
     bugService.query()
         .then(bugs => { res.send(bugs) })
@@ -18,9 +17,11 @@ app.get('/api/bug', (req, res) => {
 
 
 app.get('/api/bug/save', (req, res) => {
+
+    loggerService.debug('req.query' , req.query)
     const { title, severity, _id, description } = req.query
     const bug = {
-        title,
+        title: title || 'no title', 
         severity: +severity,
         _id,
         description,
@@ -36,12 +37,13 @@ app.get('/api/bug/:bugId', (req, res) => {
     bugService.getById(bugId)
         .then(bug => res.send(bug))
         .catch(err => {
-            loggerService.error(err)
+            loggerService.error(`Couldn't find bug ${bugId} To remove`)
             res.status(400).send(err)
         })
 })
 
 app.get('/api/bug/:bugId/remove', (req, res) => {
+    console.log('variable')
     const bugId = req.params.bugId
     bugService.remove(bugId)
         .then(() => res.send(`bug ${bugId} removed`))

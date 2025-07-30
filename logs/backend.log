@@ -189,3 +189,74 @@
 30.7.2025, 10:57:06 - ERROR - can't find bug
 30.7.2025, 11:00:54 - INFO - Server listening on port http://127.0.0.1:3030/
 30.7.2025, 12:19:07 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 12:56:03 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 12:58:49 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:01:51 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:02:20 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:02:31 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:04:38 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:04:45 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:04:51 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:04:54 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:05:01 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:05:09 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:05:18 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:05:51 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:06:24 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:07:03 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:07:22 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:07:39 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:07:41 - ERROR - can't find bug to remove
+30.7.2025, 13:11:08 - ERROR - can't find bug to remove
+30.7.2025, 13:11:17 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:11:21 - ERROR - can't find bug to remove
+30.7.2025, 13:11:59 - ERROR - can't find bug
+30.7.2025, 13:13:31 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:13:33 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:13:37 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:14:34 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:14:42 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:15:42 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:15:45 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:15:58 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:29:22 - ERROR - can't find bug
+30.7.2025, 13:31:11 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:31:33 - ERROR - Couldn't find bug 1NF1N1T3 
+ To remove
+30.7.2025, 13:32:10 - ERROR - Couldn't find bug 8mfHm6
+ To remove
+30.7.2025, 13:32:28 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:32:30 - ERROR - Couldn't find bug 8mfHm6
+ To remove
+30.7.2025, 13:34:09 - ERROR - Couldn't find bug 8mfHm6
+ To remove
+30.7.2025, 13:35:33 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:35:40 - ERROR - Couldn't find bug 8mfHm6
+ To remove
+30.7.2025, 13:37:38 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:37:42 - ERROR - Couldn't find bug 8mfHm6
+ To remove
+30.7.2025, 13:38:59 - ERROR - Couldn't find bug 8mfHm6
+ To remove
+30.7.2025, 13:40:11 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:40:38 - ERROR - Couldn't find bug 8mfHm6
+ To remove
+30.7.2025, 13:48:09 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:48:11 - ERROR - can't find bug to remove
+30.7.2025, 13:48:47 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:48:58 - ERROR - can't find bug to remove
+30.7.2025, 13:50:38 - ERROR - can't find bug to remove
+30.7.2025, 13:50:52 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:55:19 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:56:44 - DEBUG - req.query | {}
+30.7.2025, 13:56:46 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 13:57:51 - DEBUG - req.query | {"title":"no title","severity":"222222222","_id":"JwaVKx","description":"What did the bug cause"}
+30.7.2025, 13:57:52 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 14:03:30 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 14:04:03 - ERROR - can't find bug to remove
+30.7.2025, 14:04:05 - ERROR - can't find bug to remove
+30.7.2025, 14:04:09 - ERROR - can't find bug to remove
+30.7.2025, 14:04:22 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 14:04:29 - INFO - Server listening on port http://127.0.0.1:3030/
+30.7.2025, 14:04:34 - DEBUG - req.query | {}
+30.7.2025, 14:04:35 - INFO - Server listening on port http://127.0.0.1:3030/
