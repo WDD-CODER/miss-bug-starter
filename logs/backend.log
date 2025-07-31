@@ -261,3 +261,158 @@
 30.7.2025, 14:04:34 - DEBUG - req.query | {}
 30.7.2025, 14:04:35 - INFO - Server listening on port http://127.0.0.1:3030/
 31.7.2025, 12:11:15 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 12:13:12 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 12:13:17 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 12:29:12 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 12:35:30 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 12:36:09 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 12:36:49 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 12:47:18 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 12:47:42 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:00:59 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:02:16 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:12:53 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:17:32 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:25:06 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:25:57 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:26:00 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:26:13 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:33:34 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:33:42 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:34:17 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:35:02 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:35:42 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:36:59 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:38:03 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:38:46 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 13:39:50 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:00:23 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:05:07 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:05:57 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:06:05 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:07:05 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:08:39 - ERROR - Couldn't find bug 8mfHm6 To remove
+31.7.2025, 14:09:00 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:09:07 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:09:23 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:13:45 - DEBUG - req.query | {"title":"Keyboard Not Found","severity":"0","_id":"K3YB0RD"}
+31.7.2025, 14:13:46 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:14:05 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:16:34 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:17:21 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:17:34 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:17:36 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:17:46 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:18:46 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:18:59 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:19:31 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:20:02 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:27:04 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:29:49 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:29:51 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:33:23 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:36:24 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:36:38 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:36:58 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:37:38 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:38:55 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:41:48 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:45:39 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:50:52 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:55:20 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:55:25 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:55:48 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:57:27 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:57:29 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 14:58:11 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:00:16 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:13:27 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:13:39 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:16:47 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:16:56 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:17:12 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:17:27 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:17:46 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:18:32 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:19:26 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:19:54 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"222222222222222","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:19:54 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:20:27 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:20:58 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:21:15 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:21:35 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:22:17 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:24:59 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:25:16 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:25:20 - DEBUG - req.query | {"title":"Bug 1753964717461","severity":"3","description":"What did the bug cause"}
+31.7.2025, 15:25:20 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:25:25 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NF1N1T3","description":"What did the bug cause"}
+31.7.2025, 15:25:25 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:26:20 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:36:00 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:36:05 - DEBUG - req.query | {"title":"Bug 1753964717461","severity":"3","_id":"J80j7j","description":"What did the bug cause"}
+31.7.2025, 15:36:06 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:36:33 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:36:52 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:36:53 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:41:16 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:41:23 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:41:28 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:41:29 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:41:31 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:42:21 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"0","_id":"1NvvN153"}
+31.7.2025, 15:42:21 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:42:44 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:42:50 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:42:50 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:42:58 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:43:34 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:43:34 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:43:45 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:43:51 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:43:52 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:43:55 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:44:37 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:45:25 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:45:25 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:47:50 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:50:35 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:50:36 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:50:46 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:53:43 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:53:53 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:53:59 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:53:59 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:54:06 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:54:32 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:54:40 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:54:47 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:54:52 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:55:01 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:55:07 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:55:08 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:55:33 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:55:44 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:56:10 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:56:14 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:57:33 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:57:43 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:58:06 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"4","_id":"1NvvN153","description":"What did the bug cause"}
+31.7.2025, 15:58:07 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 15:58:17 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:00:02 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:00:50 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:05:47 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:05:50 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:07:57 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:08:18 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:08:24 - DEBUG - req.query | {"title":"404 Coffee Not Found","severity":"2","_id":"C0FF33","description":"What did the bug cause"}
+31.7.2025, 16:08:25 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:08:26 - DEBUG - req.query | {"title":"404 Coffee Not Found","severity":"2","_id":"C0FF33","description":"What did the bug cause"}
+31.7.2025, 16:08:48 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:12:02 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:13:39 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:13:43 - DEBUG - req.query | {"title":"Keyboard Not Found","severity":"3","_id":"K3YB0RD","description":"What did the bug cause"}
+31.7.2025, 16:13:44 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:13:55 - DEBUG - req.query | {"title":"Keyboard Not Found","severity":"2222222222222","_id":"K3YB0RD","description":"What did the bug cause"}
+31.7.2025, 16:13:55 - INFO - Server listening on port http://127.0.0.1:3030/

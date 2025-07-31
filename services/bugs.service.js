@@ -15,9 +15,6 @@ function query() {
 }
 
 function getById(bugId) {
-    console.log('Looking for bugId:', bugId)
-    console.log('Available IDs:', bugs.map(b => b._id))
-
     const bug = bugs.find(bug => bug._id === bugId)
     if (!bug) {
         return Promise.reject("can't find bug")
@@ -38,7 +35,7 @@ function save(bugToSave) {
 
     if (bugToSave._id) {
         const idx = bugs.findIndex(bug => bug._id === bugToSave._id)
-        bugs = { ...bugs[idx], ...bugToSave }
+        bugs[idx] = { ...bugs[idx], ...bugToSave }
     }
     else {
         bugToSave._id = makeId()

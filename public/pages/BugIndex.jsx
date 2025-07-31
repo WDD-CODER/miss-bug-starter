@@ -9,6 +9,8 @@ import { BugList } from '../cmps/BugList.jsx'
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
+    const [seenBugs, setSeenBugs] = useState(0)
+
 
     useEffect(loadBugs, [filterBy])
 
@@ -54,7 +56,6 @@ export function BugIndex() {
             .then(savedBug => {
                 const bugsToUpdate = bugs.map(currBug =>
                     currBug._id === savedBug._id ? savedBug : currBug)
-
                 setBugs(bugsToUpdate)
                 showSuccessMsg('Bug updated')
             })
@@ -65,17 +66,37 @@ export function BugIndex() {
         setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
     }
 
+    function onResetCookie() {
+        bugService.resetCookie()
+    }
+
+    function onSetSeenBugs() {
+        bugService.getSeenBugs()
+            .then(res => {
+                const count = res.seenBugs
+                setSeenBugs(count)
+            })
+            .catch(err => {
+                console.log('err', err);
+                showErrorMsg(' Failed fetching bugs from Server')
+            })
+
+    }
     return <section className="bug-index main-content">
 
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
+            <button >{seenBugs}</button>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
 
         <BugList
             bugs={bugs}
             onRemoveBug={onRemoveBug}
-            onEditBug={onEditBug} />
+            onEditBug={onEditBug}
+            onSetSeenBugs={onSetSeenBugs}
+            onResetCookie={onResetCookie}
+        />
     </section>
 }

@@ -1,6 +1,6 @@
-import { storageService } from './async-storage.service.js'
 
 const BASE_URL = '/api/bug'
+const COOKIE_URL = '/cookie'
 
 
 export const bugService = {
@@ -8,7 +8,9 @@ export const bugService = {
     getById,
     save,
     remove,
-    getDefaultFilter
+    getDefaultFilter,
+    getSeenBugs,
+    resetCookie
 }
 
 function query(filterBy) {
@@ -43,10 +45,31 @@ function save(bug) {
     var queryStr = `/save?title=${bug.title}&severity=${bug.severity}`
     if (bug._id) queryStr += `&_id=${bug._id}`
     if (bug.description) queryStr += `&description=${bug.description}`
-        return axios.get(BASE_URL + queryStr)
-            .then(res => res.data)
+    console.log("🚀 ~ save ~ BASE_URL + queryStr:", BASE_URL + queryStr)
+    return axios.get(BASE_URL + queryStr)
+        .then(res => res.data)
 }
 
 function getDefaultFilter() {
     return { txt: '', minSeverity: 0 }
+}
+
+function getSeenBugs() {
+    return axios.get(COOKIE_URL)
+        .then(res => res.data)
+        .then(res => res)
+        .catch(err => {
+            console.log('err', err);
+            showErrorMsg('problem shooing bugs visits')
+        })
+}
+
+function resetCookie() {
+    axios.get(COOKIE_URL + 'reset')
+        .then(res => res.data)
+        .then(res => res)
+        .catch(err => {
+            console.log('err', err);
+            showErrorMsg('problem resting bugs visits')
+        })
 }
