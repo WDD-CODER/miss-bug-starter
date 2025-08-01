@@ -416,3 +416,199 @@
 31.7.2025, 16:13:44 - INFO - Server listening on port http://127.0.0.1:3030/
 31.7.2025, 16:13:55 - DEBUG - req.query | {"title":"Keyboard Not Found","severity":"2222222222222","_id":"K3YB0RD","description":"What did the bug cause"}
 31.7.2025, 16:13:55 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:17:59 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:18:16 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"44444444444","_id":"1NF1N1T3","description":"What did the bug cause"}
+31.7.2025, 16:18:17 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:18:43 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:27:42 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:27:59 - DEBUG - req.query | {"title":"Keyboard Not Found","severity":"2222222222222","_id":"K3YB0RD","description":"What did the bug cause"}
+31.7.2025, 16:27:59 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:28:05 - DEBUG - req.query | {"title":"Infinite Loop Detected","severity":"3","_id":"1NF1N1T3","description":"What did the bug cause"}
+31.7.2025, 16:28:05 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:29:56 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 16:31:02 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 18:34:01 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 18:34:39 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 18:36:34 - INFO - Server listening on port http://127.0.0.1:3030/
+31.7.2025, 18:37:25 - ERROR - Couldn't find bug 1NvN153 To remove
+1.8.2025, 9:49:24 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 9:49:51 - DEBUG - req.query | {"title":"asd","severity":"3"}
+1.8.2025, 9:49:51 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 9:50:07 - DEBUG - req.query | {"title":"asd","severity":"6"}
+1.8.2025, 9:50:07 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 9:50:30 - DEBUG - req.query | {"title":"asd","severity":"6","_id":"Lk5SlB"}
+1.8.2025, 9:50:30 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 9:50:36 - DEBUG - req.query | {"title":"asd","severity":"10","_id":"Lk5SlB"}
+1.8.2025, 9:50:37 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 9:50:51 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 9:51:20 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 9:57:23 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 9:57:27 - DEBUG - req.query | {"title":"Keyboard Not Found","severity":"4","_id":"K3YB0RD","description":"What did the bug cause"}
+1.8.2025, 9:57:28 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 10:03:09 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 10:03:30 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 10:05:43 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 10:06:35 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 10:07:21 - ERROR - Couldn't find bug Lk5SlBcccc To remove
+1.8.2025, 10:07:38 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 10:07:40 - ERROR - Couldn't find bug Lk5SlBcccc To remove
+1.8.2025, 11:20:37 - ERROR - Couldn't find bug Lk5SlBב To remove
+1.8.2025, 11:20:58 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:21:00 - ERROR - Couldn't find bug Lk5SlBב To remove
+1.8.2025, 11:21:21 - ERROR - Couldn't find bug Lk5SlBב To remove
+1.8.2025, 11:21:25 - ERROR - Couldn't find bug Lk5SlBב To remove
+1.8.2025, 11:26:01 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:26:04 - ERROR - Couldn't find bug Lk5SlBב To remove
+1.8.2025, 11:27:04 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:27:20 - ERROR - Couldn't find bug U3z3OHc To remove
+1.8.2025, 11:27:29 - ERROR - Couldn't find bug U3z3OHc To remove
+1.8.2025, 11:27:36 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:27:38 - ERROR - Couldn't find bug U3z3OHc To remove
+1.8.2025, 11:29:07 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:29:36 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:29:52 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:29:59 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:30:07 - ERROR - Couldn't find bug 1NvvN153cc To remove
+1.8.2025, 11:30:50 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:31:28 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:31:58 - ERROR - Couldn't find bug 1NvvN153cccc To remove
+1.8.2025, 11:38:38 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:38:42 - ERROR - Couldn't find bug 1NvvN153cccc To remove
+1.8.2025, 11:40:05 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:40:49 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:40:58 - ERROR - Couldn't find bug 1NF1N1T3ccc To remove
+1.8.2025, 11:41:00 - ERROR - Couldn't find bug 1NF1N1T3ccc To remove
+1.8.2025, 11:41:01 - ERROR - Couldn't find bug 1NF1N1T3ccc To remove
+1.8.2025, 11:41:02 - ERROR - Couldn't find bug 1NF1N1T3ccc To remove
+1.8.2025, 11:42:26 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:42:28 - ERROR - Couldn't find bug 1NF1N1T3ccc To remove
+1.8.2025, 11:42:55 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:42:57 - ERROR - Couldn't find bug 1NF1N1T3ccc To remove
+1.8.2025, 11:43:14 - ERROR - Couldn't find bug 1NF1N1T3ccc To remove
+1.8.2025, 11:44:16 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:44:27 - ERROR - Couldn't find bug Lk5SlBccc To remove
+1.8.2025, 11:45:27 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:45:28 - ERROR - Couldn't find bug Lk5SlBccc To remove
+1.8.2025, 11:45:30 - ERROR - Couldn't find bug Lk5SlBccc To remove
+1.8.2025, 11:53:16 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:53:40 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:53:55 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:54:32 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:55:05 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:55:19 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:55:49 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:55:51 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:55:53 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:57:28 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:57:45 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:57:51 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:57:59 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 11:58:35 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:00:20 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:02:40 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:03:24 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:03:28 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:05:26 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:05:46 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:06:18 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:07:02 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:07:25 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:08:08 - ERROR - Couldn't find bug Lk5SlBcc To remove
+1.8.2025, 12:08:13 - ERROR - Couldn't find bug Lk5SlBcc To remove
+1.8.2025, 12:09:20 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:09:22 - ERROR - Couldn't find bug Lk5SlBcc To remove
+1.8.2025, 12:09:30 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:09:31 - ERROR - Couldn't find bug Lk5SlBcc To remove
+1.8.2025, 12:10:01 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:10:36 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:11:12 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:11:34 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:11:36 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:12:01 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:12:03 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:12:08 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:13:16 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:14:01 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:14:13 - ERROR - Couldn't find bug Lk5SlBcccc To remove
+1.8.2025, 12:15:50 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:16:37 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:16:39 - ERROR - Couldn't find bug Lk5SlBcccc To remove
+1.8.2025, 12:17:01 - ERROR - Couldn't find bug Lk5SlBבבבב To remove
+1.8.2025, 12:17:05 - ERROR - Couldn't find bug Lk5SlBבבבב To remove
+1.8.2025, 12:17:56 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:17:58 - ERROR - Couldn't find bug Lk5SlBבבבב To remove
+1.8.2025, 12:21:13 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:21:33 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:21:58 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:22:52 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:24:13 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:24:54 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:24:58 - ERROR - Couldn't find bug Lk5SlB To remove
+1.8.2025, 12:25:10 - ERROR - Couldn't find bug Lk5SlB To remove
+1.8.2025, 12:25:35 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:25:38 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:25:54 - ERROR - Couldn't find bug Lk5SlB To remove
+1.8.2025, 12:26:08 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:26:29 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:26:30 - ERROR - Couldn't find bug Lk5SlB To remove
+1.8.2025, 12:26:48 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:26:52 - ERROR - Couldn't find bug Lk5SlB To remove
+1.8.2025, 12:29:31 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:33:50 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:33:54 - ERROR - Couldn't find bug Lk5SlB To remove
+1.8.2025, 12:34:04 - ERROR - Couldn't find bug U3z3OH To remove
+1.8.2025, 12:34:47 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:35:03 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:35:13 - ERROR - Couldn't find bug U3z3OHcccc To remove
+1.8.2025, 12:35:18 - ERROR - Couldn't find bug U3z3OHcccc To remove
+1.8.2025, 12:35:52 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:36:14 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:36:35 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:37:16 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:41:09 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:43:03 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:43:32 - ERROR - Couldn't find bug Lk5SlBff To remove
+1.8.2025, 12:43:35 - ERROR - Couldn't find bug Lk5SlBff To remove
+1.8.2025, 12:43:39 - ERROR - Couldn't find bug Lk5SlBff To remove
+1.8.2025, 12:45:33 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:45:44 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:46:10 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:46:23 - ERROR - Couldn't find bug Lk5SlBff To remove
+1.8.2025, 12:46:45 - ERROR - Couldn't find bug Lk5SlBff To remove
+1.8.2025, 12:47:02 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:47:10 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:47:27 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:47:45 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:48:26 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:49:24 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:53:55 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:54:41 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:54:59 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:55:16 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:55:34 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:55:38 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:57:54 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:59:21 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 12:59:48 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:00:14 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:01:05 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:01:26 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:03:04 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:10:18 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:10:59 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:12:01 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:12:37 - ERROR - Couldn't find bug U3z3OHvvvvv To remove
+1.8.2025, 13:12:41 - ERROR - Couldn't find bug U3z3OHvvvvv To remove
+1.8.2025, 13:12:54 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:12:56 - ERROR - Couldn't find bug U3z3OHvvvvv To remove
+1.8.2025, 13:17:04 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:17:36 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:17:38 - ERROR - User already watched three bugs. Need to restart
+1.8.2025, 13:20:21 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:22:25 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:22:50 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:23:02 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:28:04 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:28:34 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:30:10 - INFO - Server listening on port http://127.0.0.1:3030/
+1.8.2025, 13:30:56 - INFO - Server listening on port http://127.0.0.1:3030/

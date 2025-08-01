@@ -9,7 +9,7 @@ import { BugList } from '../cmps/BugList.jsx'
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
-    const [seenBugs, setSeenBugs] = useState(0)
+    const [seenBugs, setSeenBugs] = useState([])
 
 
     useEffect(loadBugs, [filterBy])
@@ -87,7 +87,7 @@ export function BugIndex() {
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
-            <button >{seenBugs}</button>
+            <button >{seenBugs.length}</button>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
 
