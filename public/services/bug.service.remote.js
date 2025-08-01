@@ -56,7 +56,10 @@ function getDefaultFilter() {
 function getSeenBugs() {
     return axios.get(COOKIE_URL)
         .then(res => res.data)
-        .then(res => res)
+        .then(res => {
+            console.log('res', res)
+            
+          return  res})
         .catch(err => {
             console.log('err', err);
             showErrorMsg('problem shooing bugs visits')
@@ -64,7 +67,7 @@ function getSeenBugs() {
 }
 
 function resetCookie() {
-    axios.get(COOKIE_URL + '/remove')
+   return axios.get(COOKIE_URL + '/remove')
         .then(res => res.data)
         .then(res => res)
         .catch(err => {

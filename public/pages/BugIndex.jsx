@@ -9,10 +9,11 @@ import { BugList } from '../cmps/BugList.jsx'
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
-    const [seenBugs, setSeenBugs] = useState([])
+    const [seenBugs, setSeenBugs] = useState()
 
 
     useEffect(loadBugs, [filterBy])
+    useEffect(onSetSeenBugs, [])
 
     function loadBugs() {
         bugService.query(filterBy)
@@ -21,7 +22,6 @@ export function BugIndex() {
     }
 
     function onRemoveBug(bugId) {
-
         bugService.remove(bugId)
             .then(() => {
                 const bugsToUpdate = bugs.filter(bug => bug._id !== bugId)
@@ -67,31 +67,35 @@ export function BugIndex() {
     }
 
 
-  
+
     function onResetCookie() {
-        console.log('variable')
-        
         bugService.resetCookie()
+       .then(() => setSeenBugs(''))
+       .catch(err => {
+         console.log('err', err);
+         showErrorMsg(' Fail to remove Cookie ')
+       })
+        
     }
 
     function onSetSeenBugs() {
         bugService.getSeenBugs()
-            .then(res => {
-                const count = res.seenBugs
-                setSeenBugs(count)
-            })
+            .then(res => setSeenBugs(res))
             .catch(err => {
                 console.log('err', err);
                 showErrorMsg(' Failed fetching bugs from Server')
             })
 
     }
+
+    const sumOfSeenBugs = seenBugs ? seenBugs.split(',').length : 0
+
     return <section className="bug-index main-content">
 
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
-            <button onClick={onResetCookie} >{seenBugs.length}</button>
+            <button onClick={onResetCookie} >{sumOfSeenBugs}</button>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
 

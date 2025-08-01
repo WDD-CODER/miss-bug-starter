@@ -18,7 +18,6 @@ app.get('/api/bug', (req, res) => {
         })
 })
 
-
 app.get('/api/bug/save', (req, res) => {
     loggerService.debug('req.query', req.query)
     const { title, severity, _id, description } = req.query
@@ -36,7 +35,6 @@ app.get('/api/bug/save', (req, res) => {
 
 app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
-
     let seenBugs = req.cookies.seenBugs || ''
     if (seenBugs) seenBugs = seenBugs.split(',')
     bugService.getById(bugId)
@@ -72,9 +70,6 @@ app.get('/api/bug/:bugId/remove', (req, res) => {
 
 app.get('/cookie', (req, res) => {
     let seenBugs = req.cookies.seenBugs
-    // console.log('seenBugs', seenBugs)
-    // seenBugs++
-    // res.cookie('seenBugs', seenBugs)
     res.send(seenBugs)
 })
 
