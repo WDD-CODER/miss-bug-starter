@@ -38,13 +38,12 @@ app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
 
     let seenBugs = req.cookies.seenBugs || []
-    console.log("🚀 ~ seenBugs:", seenBugs)
-    if (seenBugs.length >= 3) return res.send('no bug')
 
     bugService.getById(bugId)
         .then(bug => {
             if (!seenBugs.includes(bugId)) seenBugs.unshift(bugId)
-            res.cookie('seenBugs', seenBugs, { maxAge: 1000 * 1000 * 7 })
+            if (seenBugs.length > 3) return res.send(seenBugs)
+            res.cookie('seenBugs', seenBugs, { maxAge: 1000 *  7 })
             return res.send(bug)
         })
         .catch(err => {
