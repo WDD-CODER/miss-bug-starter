@@ -15,6 +15,7 @@ export function BugDetails() {
             .catch(err => showErrorMsg(`Cannot load bug`, err))
     }, [])
     const seenLimit = (bug === 'no bug') ? true : false
+
     return <div className="bug-details">
         <h3>Bug Details</h3>
         {!bug && <p className="loading">Loading....</p>}

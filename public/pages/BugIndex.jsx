@@ -9,11 +9,11 @@ import { BugList } from '../cmps/BugList.jsx'
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
-    const [seenBugs, setSeenBugs] = useState()
+    const [visitedBugs, setVisitedBugs] = useState()
 
 
     useEffect(loadBugs, [filterBy])
-    useEffect(onSetSeenBugs, [])
+    useEffect(onSetVisitedBugs, [])
 
     function loadBugs() {
         bugService.query(filterBy)
@@ -70,32 +70,26 @@ export function BugIndex() {
 
     function onResetCookie() {
         bugService.resetCookie()
-       .then(() => setSeenBugs(''))
-       .catch(err => {
-         console.log('err', err);
-         showErrorMsg(' Fail to remove Cookie ')
-       })
+       .then(() => setVisitedBugs(''))
+       .catch(err => showErrorMsg(' Fail to remove Cookie '))
         
     }
 
-    function onSetSeenBugs() {
-        bugService.getSeenBugs()
-            .then(res => setSeenBugs(res))
-            .catch(err => {
-                console.log('err', err);
-                showErrorMsg(' Failed fetching bugs from Server')
-            })
+    function onSetVisitedBugs() {
+        bugService.getVisitedBugs()
+            .then(res => setVisitedBugs(res))
+            .catch(err =>  showErrorMsg(' Failed fetching bugs from Server'))
 
     }
 
-    const sumOfSeenBugs = seenBugs ? seenBugs.split(',').length : 0
+    const sumOfVisitedBugs = visitedBugs ? visitedBugs.split(',').length : 0
 
     return <section className="bug-index main-content">
 
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
-            <button onClick={onResetCookie} >{sumOfSeenBugs}</button>
+            <button onClick={onResetCookie} >{sumOfVisitedBugs}</button>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
 
@@ -103,8 +97,6 @@ export function BugIndex() {
             bugs={bugs}
             onRemoveBug={onRemoveBug}
             onEditBug={onEditBug}
-            onSetSeenBugs={onSetSeenBugs}
-            onResetCookie={onResetCookie}
         />
     </section>
 }

@@ -9,7 +9,7 @@ export const bugService = {
     save,
     remove,
     getDefaultFilter,
-    getSeenBugs,
+    getVisitedBugs,
     resetCookie
 }
 
@@ -53,25 +53,16 @@ function getDefaultFilter() {
     return { txt: '', minSeverity: 0 }
 }
 
-function getSeenBugs() {
+function getVisitedBugs() {
     return axios.get(COOKIE_URL)
         .then(res => res.data)
-        .then(res => {
-            console.log('res', res)
-            
-          return  res})
-        .catch(err => {
-            console.log('err', err);
-            showErrorMsg('problem shooing bugs visits')
-        })
+        .then(res => res)
+        .catch(err => showErrorMsg('problem showing bugs visits'))
 }
 
 function resetCookie() {
    return axios.get(COOKIE_URL + '/remove')
         .then(res => res.data)
         .then(res => res)
-        .catch(err => {
-            console.log('err', err);
-            showErrorMsg('problem resting bugs visits')
-        })
+        .catch(err => showErrorMsg('problem resting bugs visits'))
 }

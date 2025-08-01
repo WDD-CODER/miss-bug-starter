@@ -12,9 +12,10 @@ app.use(cookieParser())
 
 app.get('/api/bug', (req, res) => {
     bugService.query()
-        .then(bugs => { res.send(bugs) })
+        .then(bugs => res.send(bugs))
         .catch(err => {
-            console.log('err', err);
+            loggerService.error(err)
+            res.status(400).send(err)
         })
 })
 
@@ -30,23 +31,28 @@ app.get('/api/bug/save', (req, res) => {
 
     bugService.save(bug)
         .then(savedBug => res.send(savedBug))
+        .catch(err => {
+            loggerService.error(err)
+            res.status(400).send(err)
+        })
 })
 
 
 app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
-    let seenBugs = req.cookies.seenBugs || ''
-    if (seenBugs) seenBugs = seenBugs.split(',')
+    let visitedBugs = req.cookies.visitedBugs || ''
+    if (visitedBugs) visitedBugs = visitedBugs.split(',')
+
     bugService.getById(bugId)
         .then(bug => {
-            console.log('seenBugs3', seenBugs)
-            if (!seenBugs)  res.cookie('seenBugs', bugId, { maxAge: 1000 * 1000 * 7 })
+            console.log('User visited at the following bugs:', visitedBugs)
+            if (!visitedBugs) res.cookie('visitedBugs', bugId, { maxAge: 1000 * 1000 * 7 })
             else {
-                if (seenBugs.includes(bugId)) return res.send(bug)
+                if (visitedBugs.includes(bugId)) return res.send(bug)
                 else {
-                    if (seenBugs.length >= 3) return res.send('no bug')
-                        seenBugs += ',' + bugId
-                        res.cookie('seenBugs', seenBugs, { maxAge: 1000* 1000 * 7 })
+                    if (visitedBugs.length >= 3) return res.send('no bug')
+                    visitedBugs += ',' + bugId
+                    res.cookie('visitedBugs', visitedBugs, { maxAge: 1000 * 1000 * 7 })
                 }
             }
             return res.send(bug)
@@ -69,13 +75,12 @@ app.get('/api/bug/:bugId/remove', (req, res) => {
 })
 
 app.get('/cookie', (req, res) => {
-    let seenBugs = req.cookies.seenBugs
-    res.send(seenBugs)
+    let visitedBugs = req.cookies.visitedBugs
+    res.send(visitedBugs)
 })
 
 app.get('/cookie/remove', (req, res) => {
-    console.log('remove')
-    res.clearCookie('seenBugs')
+    res.clearCookie('visitedBugs')
     res.send(`We've cleared your seen bugs count. You can see more now`)
 })
 
