@@ -9,7 +9,6 @@ const app = express()
 
 app.use(express.static('public'))
 app.use(cookieParser())
-// app.get('/nono',(req, res) => res.redirect('/'))
 
 app.get('/api/bug', (req, res) => {
     bugService.query()
@@ -21,8 +20,6 @@ app.get('/api/bug', (req, res) => {
 
 
 app.get('/api/bug/save', (req, res) => {
-// console.log('save')
-
     loggerService.debug('req.query', req.query)
     const { title, severity, _id, description } = req.query
     const bug = {
@@ -38,13 +35,10 @@ app.get('/api/bug/save', (req, res) => {
 
 
 app.get('/api/bug/:bugId', (req, res) => {
-    // console.log(':bugId')
-    
     const { bugId } = req.params
-
-    // let seenBugs = req.cookies.seenBugs || []
-    // if (!seenBugs.includes(bugId)) seenBugs.unshift(bugId)
-    // res.cookie('seenBugs', seenBugs, { maxAge: 1000 * 1000 * 10 })
+    let seenBugs = req.cookies.seenBugs || []
+    if (!seenBugs.includes(bugId)) seenBugs.unshift(bugId)
+    res.cookie('seenBugs', seenBugs, { maxAge: 1000 * 7 })
 
     bugService.getById(bugId)
         .then(bug => { res.send(bug) })
@@ -65,13 +59,13 @@ app.get('/api/bug/:bugId/remove', (req, res) => {
         })
 })
 
-// app.get('/cookie', (req, res) => {
-//     let seenBugs = +req.cookies.seenBugs || 0
-//     console.log('seenBugs', seenBugs)
-//     seenBugs++
-//     res.cookie('seenBugs', seenBugs)
-//     res.send({seenBugs})
-// })
+app.get('/cookie', (req, res) => {
+    let seenBugs = +req.cookies.seenBugs || 0
+    console.log('seenBugs', seenBugs)
+    seenBugs++
+    res.cookie('seenBugs', seenBugs)
+    res.send({seenBugs})
+})
 
 app.get('/cookie/remove', (req, res) => {
     res.clearCookie('seenBugs')
