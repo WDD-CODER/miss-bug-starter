@@ -3,7 +3,8 @@
         "title": "asd",
         "severity": 10,
         "_id": "Lk5SlB",
-        "created": 1754031007187
+        "created": 1754031007187,
+        "description": "What did the bug cause"
     },
     {
         "title": "asd",
@@ -18,9 +19,8 @@
     },
     {
         "title": "Infinite Loop Detected",
-        "severity": 3,
-        "_id": "1NF1N1T3",
-        "description": "What did the bug cause"
+        "severity": 0,
+        "_id": "1NF1N1T3"
     },
     {
         "title": "Keyboard Not Found",

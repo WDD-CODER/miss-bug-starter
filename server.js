@@ -37,18 +37,24 @@ app.get('/api/bug/save', (req, res) => {
 app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
 
-    let seenBugs = req.cookies.seenBugs || []
-    console.log("🚀 ~ seenBugs:", seenBugs)
-    if (seenBugs.length >= 3) return res.send('no bug')
-
+    let seenBugs = req.cookies.seenBugs || ''
+    if (seenBugs) seenBugs = seenBugs.split(',')
     bugService.getById(bugId)
         .then(bug => {
-            if (!seenBugs.includes(bugId)) seenBugs.unshift(bugId)
-            res.cookie('seenBugs', seenBugs, { maxAge: 1000 * 1000 * 7 })
+            console.log('seenBugs3', seenBugs)
+            if (!seenBugs)  res.cookie('seenBugs', bugId, { maxAge: 1000 * 1000 * 7 })
+            else {
+                if (seenBugs.includes(bugId)) return res.send(bug)
+                else {
+                    if (seenBugs.length >= 3) return res.send('no bug')
+                        seenBugs += ',' + bugId
+                        res.cookie('seenBugs', seenBugs, { maxAge: 1000* 1000 * 7 })
+                }
+            }
             return res.send(bug)
         })
         .catch(err => {
-            loggerService.error(`Couldn't find bug ${bugId} To remove`)
+            loggerService.error(`Couldn't find bug ${bugId}`)
             res.status(400).send(err)
         })
 
@@ -64,15 +70,16 @@ app.get('/api/bug/:bugId/remove', (req, res) => {
         })
 })
 
-// app.get('/cookie', (req, res) => {
-//     let seenBugs = +req.cookies.seenBugs || 0
-//     console.log('seenBugs', seenBugs)
-//     seenBugs++
-//     res.cookie('seenBugs', seenBugs)
-//     res.send({seenBugs})
-// })
+app.get('/cookie', (req, res) => {
+    let seenBugs = req.cookies.seenBugs
+    // console.log('seenBugs', seenBugs)
+    // seenBugs++
+    // res.cookie('seenBugs', seenBugs)
+    res.send(seenBugs)
+})
 
 app.get('/cookie/remove', (req, res) => {
+    console.log('remove')
     res.clearCookie('seenBugs')
     res.send(`We've cleared your seen bugs count. You can see more now`)
 })

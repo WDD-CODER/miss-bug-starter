@@ -14,12 +14,14 @@ export function BugDetails() {
             .then(bug =>setBug(bug))
             .catch(err => showErrorMsg(`Cannot load bug`, err))
     }, [])
+    console.log("🚀 ~ BugDetails ~ bug:", bug)
 
     return <div className="bug-details">
         <h3>Bug Details</h3>
         {!bug && <p className="loading">Loading....</p>}
+        {bug && !bug.title&& <p className="loading"> You're done with the view you must refresh. </p>}
         {
-            bug &&
+            bug && bug.title &&
             <div>
                 <h4>{bug.title}</h4>
                 <h5>Severity: <span>{bug.severity}</span></h5>
