@@ -66,7 +66,11 @@ export function BugIndex() {
         setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
     }
 
+
+  
     function onResetCookie() {
+        console.log('variable')
+        
         bugService.resetCookie()
     }
 
@@ -87,7 +91,7 @@ export function BugIndex() {
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
-            <button >{seenBugs.length}</button>
+            <button onClick={onResetCookie} >{seenBugs.length}</button>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
 

@@ -64,7 +64,7 @@ function getSeenBugs() {
 }
 
 function resetCookie() {
-    axios.get(COOKIE_URL + 'reset')
+    axios.get(COOKIE_URL + '/remove')
         .then(res => res.data)
         .then(res => res)
         .catch(err => {
