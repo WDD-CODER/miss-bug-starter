@@ -18,7 +18,7 @@ export function BugDetails() {
     return <div className="bug-details">
         <h3>Bug Details</h3>
         {!bug && <p className="loading">Loading....</p>}
-        {seenLimit && <p className="loading"> You're done with the view you must refresh. </p>}
+        {seenLimit && <p className="loading"> You've reached the limit of views. Press on the number-of-views button to restart </p>}
         {
             bug && !seenLimit &&
             <div>
