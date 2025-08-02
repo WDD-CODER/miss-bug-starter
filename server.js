@@ -52,14 +52,14 @@ app.get('/api/bug/:bugId', (req, res) => {
                 else {
                     if (visitedBugs.length >= 3) return res.send('no bug')
                     visitedBugs += ',' + bugId
-                    res.cookie('visitedBugs', visitedBugs, { maxAge: 1000 * 1000 * 7 })
+                    res.cookie('visitedBugs', visitedBugs, { maxAge: 1000  * 7 })
                 }
             }
             return res.send(bug)
         })
         .catch(err => {
             loggerService.error(`Couldn't find bug ${bugId}`)
-            res.status(400).send(err)
+            return res.status(401).send('Wait for a bit')
         })
 
 })
