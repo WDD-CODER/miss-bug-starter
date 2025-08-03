@@ -1150,3 +1150,9 @@
 3.8.2025, 12:54:20 - INFO - Server listening on port http://127.0.0.1:3030/
 3.8.2025, 13:00:55 - INFO - Server listening on port http://127.0.0.1:3030/
 3.8.2025, 13:02:05 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 13:06:27 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 13:06:55 - DEBUG - req.query | {"title":"cccccccccccccccccccccccccc","severity":"3","description":"What did the bug cause"}
+3.8.2025, 13:06:56 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 13:28:17 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 13:29:48 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 13:29:56 - INFO - Server listening on port http://127.0.0.1:3030/

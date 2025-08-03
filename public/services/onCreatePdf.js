@@ -5,10 +5,10 @@ import PDFDocument from 'pdfkit-table'
 export function onCreatePdf(data) {
     return new Promise((resolve, reject) => {
         let doc = new PDFDocument({ margin: 15, size: 'A4' })
-        const stream = fs.createWriteStream('./students.pdf')
+        const stream = fs.createWriteStream('./bugs.pdf')
         doc.pipe(stream)
 
-        createPdf(doc, data)
+        _createPdf(doc, data)
             .then(() => doc.end())
             .catch(reject)
 
@@ -17,7 +17,7 @@ export function onCreatePdf(data) {
     })
 }
 
-function createPdf(doc, data) {
+function _createPdf(doc, data) {
     const bugsSorted = data.sort((a, b) => a.createdAt - b.createdAt)
     const bugsReadyForPDF = bugsSorted.map(bug => {
         const { title, severity, description, _id, createdAt } = bug
@@ -25,12 +25,11 @@ function createPdf(doc, data) {
     })
 
     const table = {
-        title: 'Students',
-        subtitle: 'Sorted by age',
+        title: 'Bugs List',
+        subtitle: 'Sorted by time of creation',
         headers: ['title', 'severity', 'description', 'id', 'createdAt'],
         rows: [...bugsReadyForPDF]
     }
-
 
     return doc.table(table, {
         columnsSize: [110, 60, 180, 100, 110],

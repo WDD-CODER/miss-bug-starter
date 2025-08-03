@@ -42,15 +42,13 @@ app.get('/api/bug/pdf', (req, res) => {
     bugService.query()
         .then(bugs => onCreatePdf(bugs))
         .then(() => {
-            const filePath = './students.pdf'
-            res.download(filePath, 'students.pdf')
-            // return res.send(pdf)
+            const filePath = './bugs.pdf'
+            res.download(filePath, 'bugs.pdf')
         })
         .catch(err => {
             loggerService.error(err)
             res.status(400).send(err)
         })
-    // res.send()
 })
 
 
