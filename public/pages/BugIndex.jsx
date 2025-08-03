@@ -77,8 +77,6 @@ export function BugIndex() {
     }
 
     function onAddLabel(bug, ev) {
-        console.log("🚀 ~ onAddLabel ~ bug:", bug)
-        console.log("🚀 ~ onAddLabel ~ ev:", ev.target.value)
         bug.label = ev.target.value
         bugService.save(bug)
             .then(() => showSuccessMsg('set Bug label'))

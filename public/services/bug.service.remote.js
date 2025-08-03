@@ -14,21 +14,22 @@ export const bugService = {
 }
 
 function query(filterBy) {
-    return axios.get(BASE_URL)
+    console.log("🚀 ~ query ~ filterBy:", filterBy)
+    return axios.get(BASE_URL, {params: filterBy})
         .then(res => res.data)
-        .then(bugs => {
+        // .then(bugs => {
 
-            if (filterBy.txt) {
-                const regExp = new RegExp(filterBy.txt, 'i')
-                bugs = bugs.filter(bug => regExp.test(bug.title))
-            }
+        //     if (filterBy.txt) {
+        //         const regExp = new RegExp(filterBy.txt, 'i')
+        //         bugs = bugs.filter(bug => regExp.test(bug.title))
+        //     }
 
-            if (filterBy.minSeverity) {
-                bugs = bugs.filter(bug => bug.severity >= filterBy.minSeverity)
-            }
+        //     if (filterBy.minSeverity) {
+        //         bugs = bugs.filter(bug => bug.severity >= filterBy.minSeverity)
+        //     }
 
-            return bugs
-        })
+        //     return bugs
+        // })
 }
 
 function getById(bugId) {

@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser'
 import { bugService } from './services/bugs.service.js'
 import { loggerService } from './services/logger.service.js'
 import { onCreatePdf } from './public/services/onCreatePdf.js'
+import { title } from 'process'
 
 const app = express()
 
@@ -12,7 +13,19 @@ app.use(express.static('public'))
 app.use(cookieParser())
 
 app.get('/api/bug', (req, res) => {
-    bugService.query()
+const filterBy={
+    txt: req.query.txt,
+    minSeverity: +req.query.minSeverity
+    // pageIdx: req.query.pageIdx,
+    // _id: req.query._id,
+    // description: req.query.description,
+    // createdAt: req.query.createdAt,
+    // label: req.query.label,
+}
+
+
+console.log("🚀 ~ filterBy:", filterBy)
+    bugService.query(filterBy)
         .then(bugs => res.send(bugs))
         .catch(err => {
             loggerService.error(err)
@@ -23,6 +36,7 @@ app.get('/api/bug', (req, res) => {
 app.get('/api/bug/save', (req, res) => {
     loggerService.debug('req.query', req.query)
     const { title, severity, _id, description, label = ''} = req.query
+
     const bug = {
         title: title || 'no title',
         severity: +severity,
