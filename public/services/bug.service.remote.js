@@ -10,7 +10,7 @@ export const bugService = {
     remove,
     getDefaultFilter,
     getVisitedBugs,
-    resetCookie
+    resetCookie,
 }
 
 function query(filterBy) {

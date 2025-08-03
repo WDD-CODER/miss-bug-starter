@@ -2,7 +2,6 @@ const { useState, useEffect } = React
 
 import { bugService } from '../services/bug.service.remote.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
-
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
 
@@ -19,6 +18,10 @@ export function BugIndex() {
         bugService.query(filterBy)
             .then(setBugs)
             .catch(err => showErrorMsg(`Couldn't load bugs - ${err}`))
+    }
+
+    function onDownloadPDF() {
+        window.open('/api/bug/pdf')
     }
 
     function onRemoveBug(bugId) {
@@ -70,15 +73,15 @@ export function BugIndex() {
 
     function onResetCookie() {
         bugService.resetCookie()
-       .then(() => setVisitedBugs(''))
-       .catch(err => showErrorMsg(' Fail to remove Cookie '))
-        
+            .then(() => setVisitedBugs(''))
+            .catch(err => showErrorMsg(' Fail to remove Cookie '))
+
     }
 
     function onSetVisitedBugs() {
         bugService.getVisitedBugs()
             .then(res => setVisitedBugs(res))
-            .catch(err =>  showErrorMsg(' Failed fetching bugs from Server'))
+            .catch(err => showErrorMsg(' Failed fetching bugs from Server'))
 
     }
 
@@ -90,6 +93,7 @@ export function BugIndex() {
         <header>
             <h3>Bug List</h3>
             <button onClick={onResetCookie} >{sumOfVisitedBugs}</button>
+            <button onClick={onDownloadPDF} >Download PDF</button>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
 

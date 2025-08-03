@@ -39,7 +39,7 @@ function save(bugToSave) {
     }
     else {
         bugToSave._id = makeId()
-        bugToSave.created = Date.now()
+        bugToSave.createdAt = Date.now()
         bugs.unshift(bugToSave)
     }
 
