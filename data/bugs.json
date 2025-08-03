@@ -1,41 +1,43 @@
 [
     {
-        "title": "asd",
-        "severity": 10,
-        "_id": "Lk5SlB",
-        "created": 1754031007187,
-        "description": "What did the bug cause"
-    },
-    {
-        "title": "asd",
-        "severity": 3,
-        "_id": "U3z3OH",
-        "created": 1754030991196
-    },
-    {
-        "title": "Infinite Loop Detected",
-        "severity": 4,
-        "_id": "1NvvN153"
-    },
-    {
-        "title": "Infinite Loop Detected",
+        "title": "null",
         "severity": 0,
-        "_id": "1NF1N1T3"
+        "_id": "2vW5T9",
+        "createdAt": 1754155638036
     },
     {
-        "title": "Keyboard Not Found",
-        "severity": 4,
-        "_id": "K3YB0RD",
-        "description": "What did the bug cause"
+        "title": "Login crash on timeout",
+        "severity": 3,
+        "_id": "STtxY6",
+        "description": "User is logged out abruptly after 2 minutes",
+        "createdAt": 1754155538440
     },
     {
-        "title": "404 Coffee Not Found",
-        "severity": 2,
-        "_id": "C0FF33"
-    },
-    {
-        "title": "Unexpected Response",
+        "title": "Form submit duplicates data",
         "severity": 1,
-        "_id": "G0053"
+        "_id": "LkA3pZ",
+        "description": "Submitting twice causes double entries",
+        "createdAt": 1754157771123
+    },
+    {
+        "title": "Mobile layout shifts on scroll",
+        "severity": 2,
+        "_id": "QzK8dJ",
+        "description": "Header overlaps content on iOS",
+        "createdAt": 1754157920984
+    },
+    {
+        "title": "Validation skips email field",
+        "severity": 4,
+        "_id": "XvR1mB",
+        "description": "User can proceed without entering email",
+        "createdAt": 1754158015000
+    },
+    {
+        "title": "PDF export returns empty file",
+        "severity": 5,
+        "_id": "HjT6cN",
+        "description": "Generated file is 0 bytes with no content",
+        "createdAt": 1754158123456
     }
 ]

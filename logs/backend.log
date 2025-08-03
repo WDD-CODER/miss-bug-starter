@@ -981,3 +981,172 @@
 1.8.2025, 22:58:48 - INFO - Server listening on port http://127.0.0.1:3030/
 2.8.2025, 18:49:33 - INFO - Server listening on port http://127.0.0.1:3030/
 2.8.2025, 18:51:19 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:09:41 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:12:11 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:17:19 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:18:07 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:27:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:30:04 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:30:55 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:31:08 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:32:31 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:32:39 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:34:43 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:46:47 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:48:22 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:48:24 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:49:24 - ERROR - Couldn't find bug pdf
+2.8.2025, 19:49:38 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:49:40 - ERROR - Couldn't find bug pdf
+2.8.2025, 19:49:59 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:50:12 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:50:14 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:50:15 - ERROR - TypeError: Class constructor PDFDocumentWithTables cannot be invoked without 'new'
+2.8.2025, 19:51:18 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:51:21 - ERROR - TypeError: Class constructor PDFDocumentWithTables cannot be invoked without 'new'
+2.8.2025, 19:52:45 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:52:47 - ERROR - TypeError: Class constructor PDFDocumentWithTables cannot be invoked without 'new'
+2.8.2025, 19:53:29 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:53:30 - ERROR - TypeError: Class constructor PDFDocumentWithTables cannot be invoked without 'new'
+2.8.2025, 19:54:27 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:54:29 - ERROR - TypeError: Class constructor PDFDocumentWithTables cannot be invoked without 'new'
+2.8.2025, 19:55:08 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:55:09 - ERROR - TypeError: Class constructor PDFDocumentWithTables cannot be invoked without 'new'
+2.8.2025, 19:55:54 - ERROR - TypeError: Class constructor PDFDocumentWithTables cannot be invoked without 'new'
+2.8.2025, 19:55:58 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:56:02 - ERROR - TypeError: Class constructor PDFDocumentWithTables cannot be invoked without 'new'
+2.8.2025, 19:56:58 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:57:53 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:59:06 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:59:12 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 19:59:17 - ERROR - ReferenceError: doc is not defined
+2.8.2025, 20:02:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:03:35 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:04:11 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:06:09 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:06:56 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:08:19 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:08:23 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:08:33 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:08:51 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:09:35 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:09:47 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:09:49 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:10:14 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:10:28 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:10:42 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:10:43 - ERROR - ReferenceError: auto is not defined
+2.8.2025, 20:10:53 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:11:06 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:11:32 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:12:30 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:12:31 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:21:36 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:21:39 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:22:08 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:22:10 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:22:29 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:22:31 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:22:32 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:24:26 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:24:33 - DEBUG - req.query | {"title":"Bug 1754155470889","severity":"3","description":"What did the bug cause"}
+2.8.2025, 20:24:34 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:25:14 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:25:28 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:25:38 - DEBUG - req.query | {"title":"Bug 1754155533861","severity":"3","description":"What did the bug cause"}
+2.8.2025, 20:25:39 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:27:04 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:27:12 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:27:18 - DEBUG - req.query | {"title":"null","severity":"0"}
+2.8.2025, 20:27:18 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:27:22 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:27:30 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:27:42 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:28:22 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:28:24 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:28:32 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:28:33 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:29:21 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:29:30 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:29:31 - ERROR - TypeError: Assignment to constant variable.
+2.8.2025, 20:29:39 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:29:40 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:30:01 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:30:04 - ERROR - ReferenceError: created is not defined
+2.8.2025, 20:30:09 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:30:10 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:31:36 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:31:54 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:34:13 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:34:29 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:34:29 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:35:57 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:35:58 - ERROR - ReferenceError: createdTime is not defined
+2.8.2025, 20:36:05 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:36:06 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:36:54 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:36:56 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:41:30 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:41:39 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:41:40 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:42:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:42:52 - ERROR - TypeError: Cannot read properties of undefined (reading 'then')
+2.8.2025, 20:43:40 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:44:40 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:46:26 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:46:49 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:48:38 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:49:10 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:49:26 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:50:38 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:50:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:51:22 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:52:33 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:52:47 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:53:05 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:54:42 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:55:22 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:55:24 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:56:03 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:56:09 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:56:59 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:58:24 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 20:58:44 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:01:45 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:01:54 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:02:06 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:02:18 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:02:51 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:03:24 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:03:35 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:04:02 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:04:21 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:05:47 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:07:16 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:07:29 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:07:54 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:10:30 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:11:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:11:57 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:13:13 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:14:35 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:14:45 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:15:26 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:15:46 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:15:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:16:13 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:16:30 - INFO - Server listening on port http://127.0.0.1:3030/
+2.8.2025, 21:22:45 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:47:10 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:47:16 - ERROR - ReferenceError: onCreatePdf is not defined
+3.8.2025, 12:47:31 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:47:55 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:48:31 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:50:45 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:50:47 - ERROR - ReferenceError: stream is not defined
+3.8.2025, 12:51:19 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:52:01 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:54:04 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 12:54:20 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 13:00:55 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 13:02:05 - INFO - Server listening on port http://127.0.0.1:3030/

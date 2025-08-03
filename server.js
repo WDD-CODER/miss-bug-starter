@@ -4,6 +4,7 @@ import path from 'path'
 import cookieParser from 'cookie-parser'
 import { bugService } from './services/bugs.service.js'
 import { loggerService } from './services/logger.service.js'
+import { onCreatePdf } from './public/services/onCreatePdf.js'
 
 const app = express()
 
@@ -37,6 +38,21 @@ app.get('/api/bug/save', (req, res) => {
         })
 })
 
+app.get('/api/bug/pdf', (req, res) => {
+    bugService.query()
+        .then(bugs => onCreatePdf(bugs))
+        .then(() => {
+            const filePath = './students.pdf'
+            res.download(filePath, 'students.pdf')
+            // return res.send(pdf)
+        })
+        .catch(err => {
+            loggerService.error(err)
+            res.status(400).send(err)
+        })
+    // res.send()
+})
+
 
 app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
@@ -52,7 +68,7 @@ app.get('/api/bug/:bugId', (req, res) => {
                 else {
                     if (visitedBugs.length >= 3) return res.send('no bug')
                     visitedBugs += ',' + bugId
-                    res.cookie('visitedBugs', visitedBugs, { maxAge: 1000  * 7 })
+                    res.cookie('visitedBugs', visitedBugs, { maxAge: 1000 * 7 })
                 }
             }
             return res.send(bug)
@@ -83,6 +99,7 @@ app.get('/cookie/remove', (req, res) => {
     res.clearCookie('visitedBugs')
     res.send(`We've cleared your seen bugs count. You can see more now`)
 })
+
 
 app.get('*all', (req, res) => {
     res.sendFile(path.resolve('public', 'index.html'))
