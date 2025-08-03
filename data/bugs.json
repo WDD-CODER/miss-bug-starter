@@ -39,7 +39,8 @@
         "severity": 5,
         "_id": "HjT6cN",
         "description": "Generated file is 0 bytes with no content",
-        "createdAt": 1754158123456
+        "createdAt": 1754158123456,
+        "label": "dev-branch"
     },
     {
         "title": "cccccccccccccccccccccccccc",

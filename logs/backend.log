@@ -1175,3 +1175,9 @@
 3.8.2025, 14:14:01 - INFO - Server listening on port http://127.0.0.1:3030/
 3.8.2025, 14:17:33 - INFO - Server listening on port http://127.0.0.1:3030/
 3.8.2025, 14:17:44 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:28:48 - DEBUG - req.query | {"title":"PDF export returns empty file","severity":"5","_id":"HjT6cN","description":"Generated file is 0 bytes with no content","label":"dev-branch"}
+3.8.2025, 14:28:49 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:30:12 - DEBUG - req.query | {"title":"Form submit duplicates data","severity":"1","_id":"LkA3pZ","description":"What did the bug cause","label":"need-CR"}
+3.8.2025, 14:30:12 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:30:56 - DEBUG - req.query | {"title":"PDF export returns empty file","severity":"5","_id":"HjT6cN","description":"Generated file is 0 bytes with no content","label":"dev-branch"}
+3.8.2025, 14:30:57 - INFO - Server listening on port http://127.0.0.1:3030/
