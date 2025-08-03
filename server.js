@@ -22,12 +22,13 @@ app.get('/api/bug', (req, res) => {
 
 app.get('/api/bug/save', (req, res) => {
     loggerService.debug('req.query', req.query)
-    const { title, severity, _id, description } = req.query
+    const { title, severity, _id, description, label = ''} = req.query
     const bug = {
         title: title || 'no title',
         severity: +severity,
         _id,
         description,
+        label
     }
 
     bugService.save(bug)

@@ -45,6 +45,7 @@ function save(bug) {
     var queryStr = `/save?title=${bug.title}&severity=${bug.severity}`
     if (bug._id) queryStr += `&_id=${bug._id}`
     if (bug.description) queryStr += `&description=${bug.description}`
+    if (bug.label) queryStr += `&label=${bug.label}`
     return axios.get(BASE_URL + queryStr)
         .then(res => res.data)
 }

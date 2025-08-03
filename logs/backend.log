@@ -1156,3 +1156,22 @@
 3.8.2025, 13:28:17 - INFO - Server listening on port http://127.0.0.1:3030/
 3.8.2025, 13:29:48 - INFO - Server listening on port http://127.0.0.1:3030/
 3.8.2025, 13:29:56 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 13:46:51 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:05:35 - DEBUG - req.query | {"title":"Form submit duplicates data","severity":"1","_id":"LkA3pZ","description":"What did the bug cause"}
+3.8.2025, 14:05:35 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:05:40 - DEBUG - req.query | {"title":"Form submit duplicates data","severity":"1","_id":"LkA3pZ","description":"What did the bug cause"}
+3.8.2025, 14:05:41 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:08:01 - DEBUG - req.query | {"title":"Form submit duplicates data","severity":"1","_id":"LkA3pZ","description":"What did the bug cause"}
+3.8.2025, 14:08:02 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:09:49 - DEBUG - req.query | {"title":"Mobile layout shifts on scroll","severity":"2","_id":"QzK8dJ","description":"Header overlaps content on iOS"}
+3.8.2025, 14:09:50 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:10:07 - DEBUG - req.query | {"title":"Mobile layout shifts on scroll","severity":"2","_id":"QzK8dJ","description":"Header overlaps content on iOS"}
+3.8.2025, 14:10:08 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:10:44 - DEBUG - req.query | {"title":"Form submit duplicates data","severity":"1","_id":"LkA3pZ","description":"What did the bug cause"}
+3.8.2025, 14:10:44 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:11:31 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:13:55 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:14:00 - DEBUG - req.query | {"title":"Form submit duplicates data","severity":"1","_id":"LkA3pZ","description":"What did the bug cause","label":"need-CR"}
+3.8.2025, 14:14:01 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:17:33 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 14:17:44 - INFO - Server listening on port http://127.0.0.1:3030/

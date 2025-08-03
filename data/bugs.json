@@ -1,12 +1,5 @@
 [
     {
-        "title": "cccccccccccccccccccccccccc",
-        "severity": 3,
-        "_id": "wIdNCv",
-        "description": "What did the bug cause",
-        "createdAt": 1754215615746
-    },
-    {
         "title": "Login crash on timeout",
         "severity": 3,
         "_id": "STtxY6",
@@ -23,8 +16,9 @@
         "title": "Form submit duplicates data",
         "severity": 1,
         "_id": "LkA3pZ",
-        "description": "Submitting twice causes double entries",
-        "createdAt": 1754157771123
+        "description": "What did the bug cause",
+        "createdAt": 1754157771123,
+        "label": "need-CR"
     },
     {
         "title": "Mobile layout shifts on scroll",
@@ -46,5 +40,12 @@
         "_id": "HjT6cN",
         "description": "Generated file is 0 bytes with no content",
         "createdAt": 1754158123456
+    },
+    {
+        "title": "cccccccccccccccccccccccccc",
+        "severity": 3,
+        "_id": "wIdNCv",
+        "description": "What did the bug cause",
+        "createdAt": 1754215615746
     }
 ]

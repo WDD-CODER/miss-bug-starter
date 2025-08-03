@@ -69,13 +69,20 @@ export function BugIndex() {
         setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
     }
 
-
-
     function onResetCookie() {
         bugService.resetCookie()
             .then(() => setVisitedBugs(''))
-            .catch(err => showErrorMsg(' Fail to remove Cookie '))
+            .catch(err => showErrorMsg(' Fail to remove Cookie ',err))
 
+    }
+
+    function onAddLabel(bug, ev) {
+        console.log("🚀 ~ onAddLabel ~ bug:", bug)
+        console.log("🚀 ~ onAddLabel ~ ev:", ev.target.value)
+        bug.label = ev.target.value
+        bugService.save(bug)
+            .then(() => showSuccessMsg('set Bug label'))
+            .catch(err => showErrorMsg('problem seating bug label', err))
     }
 
     function onSetVisitedBugs() {
@@ -101,6 +108,7 @@ export function BugIndex() {
             bugs={bugs}
             onRemoveBug={onRemoveBug}
             onEditBug={onEditBug}
+            onAddLabel={onAddLabel}
         />
     </section>
 }
