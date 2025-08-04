@@ -90,9 +90,7 @@ app.get('/api/bug/:bugId', (req, res) => {
         })
 })
 
-app.delete('/api/bug/:bugId', (req, res) => {
-    console.log('variable')
-    
+app.delete('/api/bug/:bugId', (req, res) => {    
     const bugId = req.params.bugId
     bugService.remove(bugId)
         .then(() => res.send(`bug ${bugId} removed`))
@@ -109,14 +107,12 @@ app.delete('/cookie', (req, res) => {
 
 app.get('/cookie', (req, res) => {
     const visitedBugs = req.cookies.visitedBugs
-    console.log("🚀 ~ visitedBugs:", visitedBugs)
     res.send(visitedBugs)
 })
 
 
 // app.get('/file/pdf', (req, res) => {
 //     const visitedBugs = req.cookies.visitedBugs
-//     console.log("🚀 ~ visitedBugs:", visitedBugs)
 //     res.send(visitedBugs)
 // })
 

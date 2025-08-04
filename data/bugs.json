@@ -1,13 +1,5 @@
 [
     {
-        "title": "b",
-        "severity": 3,
-        "description": "What did the bug cause",
-        "labels": [],
-        "_id": "w0Ow7E",
-        "createdAt": 1754323454561
-    },
-    {
         "title": "404 Coffee Not Found",
         "severity": 2,
         "_id": "C0FF33",
@@ -32,6 +24,14 @@
         "description": "What did the bug cause",
         "createdAt": 1754030991196,
         "labels": []
+    },
+    {
+        "title": "b",
+        "severity": 3,
+        "description": "What did the bug cause",
+        "labels": [],
+        "_id": "w0Ow7E",
+        "createdAt": 1754323454561
     },
     {
         "title": "Bug 1754295196505",
