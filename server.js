@@ -1,7 +1,7 @@
 import express from 'express'
 import path from 'path'
-
 import cookieParser from 'cookie-parser'
+
 import { bugService } from './services/bugs.service.js'
 import { loggerService } from './services/logger.service.js'
 import { onCreatePdf } from './public/services/onCreatePdf.js'
@@ -17,29 +17,25 @@ app.get('/api/bug', (req, res) => {
     const filter = {
         txt: req.query.txt || '',
         minSeverity: +req.query.minSeverity || 0,
-
-        // pageIdx: req.query.pageIdx,
-        // label: req.query.label,
     }
 
-    // const sort = {
-    //     sortBy: +req.query.minSeverity,
-    //     sortDir: +req.query.sortDir,
-    // }
+    const sort = {
+        sortBy: req.query.sortBy || '',
+        sortDir:req.query.sortDir || 1
+    }
 
-    bugService.query(filter)
+    bugService.query(filter, sort)
         .then(bugs => res.send(bugs))
         .catch(err => {
             loggerService.error(err)
-            res.status(400).send(err)
+            res.status(500).send(err)
         })
 })
 
 app.post('/api/bug', (req, res) => {
-    loggerService.debug('req.query', req.body)
+    loggerService.debug('req.body', req.body)
 
-    const { title, severity, description, labels =[] } = req.body
-
+    const { title, severity, description, labels = [] } = req.body
     const bug = {
         title: title || 'No Title',
         severity: +severity,
@@ -56,11 +52,9 @@ app.post('/api/bug', (req, res) => {
 })
 
 app.put('/api/bug', (req, res) => {
-    console.log('req.body', req.body)
+    loggerService.debug('req.body', req.body)
 
-    loggerService.debug('req.query', req.body)
     const { title, severity, _id, description, labels = [] } = req.body
-
     const bug = {
         title: title || 'No Title',
         severity: +severity,
@@ -77,45 +71,21 @@ app.put('/api/bug', (req, res) => {
         })
 })
 
-app.get('/api/bug/pdf', (req, res) => {
-    bugService.query()
-        .then(bugs => onCreatePdf(bugs))
-        .then(() => {
-            const filePath = './bugs.pdf'
-            res.download(filePath, 'bugs.pdf')
-        })
-        .catch(err => {
-            loggerService.error(err)
-            res.status(400).send(err)
-        })
-})
-
-// לא טוב להעביר אצ הארור כמו ארור הרי הוא רק צריך לקבל מלל מסביר מינימלי
-
 app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
-    let visitedBugs = req.cookies.visitedBugs || ''
-    if (visitedBugs) visitedBugs = visitedBugs.split(',')
+    let visitedBugs = req.cookies.visitedBugs || []
 
     bugService.getById(bugId)
         .then(bug => {
-            console.log('User visited at the following bugs:', visitedBugs)
-            if (!visitedBugs) res.cookie('visitedBugs', bugId, { maxAge: 1000 * 7 })
-            else {
-                if (visitedBugs.includes(bugId)) return res.send(bug)
-                else {
-                    if (visitedBugs.length >= 3) return res.send('no bug')
-                    visitedBugs += ',' + bugId
-                    res.cookie('visitedBugs', visitedBugs, { maxAge: 1000 * 7 })
-                }
-            }
+            if (!visitedBugs.includes(bugId)) visitedBugs.unshift(bugId)
+            if (visitedBugs.length > 3) return res.send('no bug')
+            res.cookie('visitedBugs', visitedBugs, { maxAge: 1000 * 7 })
             return res.send(bug)
         })
         .catch(err => {
             loggerService.error(`Couldn't find bug ${bugId}`)
-            return res.status(401).send('Wait for a bit')
+            res.status(400).send(err)
         })
-
 })
 
 app.delete('/api/bug/:bugId/remove', (req, res) => {
@@ -126,11 +96,6 @@ app.delete('/api/bug/:bugId/remove', (req, res) => {
             loggerService.error(err)
             res.status(400).send("Couldn't find bug to remove")
         })
-})
-
-app.get('/cookie', (req, res) => {
-    let visitedBugs = req.cookies.visitedBugs
-    res.send(visitedBugs)
 })
 
 app.get('/cookie/remove', (req, res) => {

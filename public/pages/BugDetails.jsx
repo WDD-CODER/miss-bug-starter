@@ -14,14 +14,13 @@ export function BugDetails() {
             .then(bug => setBug(bug))
             .catch(err => showErrorMsg(`Cannot load bug`, err))
     }, [])
-    const seenLimit = (bug === 'no bug') ? true : false
-
+    
     return <div className="bug-details">
         <h3>Bug Details</h3>
         {!bug && <p className="loading">Loading....</p>}
-        {seenLimit && <p className="loading"> You've reached the limit of views. Press on the number-of-views button to restart </p>}
+        {bug && bug.length && <p className="loading"> Sorry, you must refresh your watching capabilities.  </p>}
         {
-            bug && !seenLimit &&
+            bug && !bug.length &&
             <div>
                 <h4>{bug.title}</h4>
                 <h5>Severity: <span>{bug.severity}</span></h5>

@@ -10,7 +10,6 @@ export function BugIndex() {
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
     const [visitedBugs, setVisitedBugs] = useState()
 
-
     useEffect(loadBugs, [filterBy])
     useEffect(onSetVisitedBugs, [])
 
@@ -52,7 +51,6 @@ export function BugIndex() {
     function onEditBug(bug) {
         const severity = +prompt('New severity?', bug.severity)
         const description = prompt('What Happened?', bug.description || 'What did the bug cause')
-
         const bugToSave = { ...bug, severity, description }
 
         bugService.save(bugToSave)
@@ -66,6 +64,7 @@ export function BugIndex() {
     }
 
     function onSetFilterBy(filterBy) {
+        
         setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
     }
 
@@ -73,13 +72,12 @@ export function BugIndex() {
         bugService.resetCookie()
             .then(() => setVisitedBugs(''))
             .catch(err => showErrorMsg(' Fail to remove Cookie ', err))
-
     }
 
     function onAddLabel(bug, ev) {
         const addLabel = ev.target.value
         if (bug.labels.includes(addLabel)) return
-        else bug.labels.push(addLabel)
+        bug.labels.push(addLabel)
         const bugIdx = bugs.findIndex(curBug => curBug._id === bug._id)
         const updatedBugs = [...bugs]
         updatedBugs.splice(bugIdx, 1, bug)
@@ -90,7 +88,6 @@ export function BugIndex() {
             })
             .catch(err => showErrorMsg('problem adding bug label', err))
     }
-
 
     function onRemoveLabel(bug, labelToRemove) {
         const labelIdx = bug.labels.findIndex(label => label === labelToRemove)
@@ -104,26 +101,22 @@ export function BugIndex() {
                 showSuccessMsg('removed Bug labels')
             })
             .catch(err => showErrorMsg('problem removing bug label', err))
-
-
     }
 
     function onSetVisitedBugs() {
         bugService.getVisitedBugs()
             .then(res => setVisitedBugs(res))
             .catch(err => showErrorMsg(' Failed fetching bugs from Server'))
-
     }
 
     const sumOfVisitedBugs = visitedBugs ? visitedBugs.split(',').length : 0
 
     return <section className="bug-index main-content">
-
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
-            <button onClick={onResetCookie} >{sumOfVisitedBugs}</button>
-            <button onClick={onDownloadPDF} >Download PDF</button>
+            <button onClick={onResetCookie}>{sumOfVisitedBugs}</button>
+            <button onClick={onDownloadPDF}>Download PDF</button>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
 
@@ -133,7 +126,6 @@ export function BugIndex() {
             onEditBug={onEditBug}
             onAddLabel={onAddLabel}
             onRemoveLabel={onRemoveLabel}
-
         />
     </section>
 }

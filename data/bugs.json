@@ -1,55 +1,46 @@
 [
     {
-        "title": "Bug 1754295354323",
+        "title": "b",
         "severity": 3,
         "description": "What did the bug cause",
-        "labels": [
-            "need-CR",
-            "dev-branch"
-        ],
-        "_id": "vNRLei",
-        "createdAt": 1754295357974
+        "labels": [],
+        "_id": "w0Ow7E",
+        "createdAt": 1754323454561
     },
     {
-        "title": "new guy",
-        "severity": 555,
-        "labels": [],
-        "_id": "oEvXxt",
-        "createdAt": 1754295316344
+        "title": "404 Coffee Not Found",
+        "severity": 2,
+        "_id": "C0FF33",
+        "description": "What did the bug cause",
+        "createdAt": 1722768000000,
+        "labels": [
+            "need-CR"
+        ]
+    },
+    {
+        "title": "asd",
+        "severity": 10,
+        "_id": "Lk5SlB",
+        "description": "What did the bug cause",
+        "createdAt": 1754031007187,
+        "labels": []
+    },
+    {
+        "title": "asd",
+        "severity": 3,
+        "_id": "U3z3OH",
+        "description": "What did the bug cause",
+        "createdAt": 1754030991196,
+        "labels": []
     },
     {
         "title": "Bug 1754295196505",
         "severity": 3,
+        "_id": "1NF1N1T3",
         "description": "What did the bug cause",
-        "labels": [],
-        "_id": "KN3Upw",
-        "createdAt": 1754295199635
-    },
-    {
-        "title": "new guy",
-        "severity": 555,
-        "labels": [
-            "need-CR",
-            "dev-branch"
-        ],
-        "_id": "dUtVM2",
-        "createdAt": 1754286304970
-    },
-    {
-        "title": "ff",
-        "severity": 3,
-        "description": "What did the bug cause",
+        "createdAt": 1722768000000,
         "labels": [
             "critical"
-        ],
-        "_id": "r8aByc",
-        "createdAt": 1754240240545
-    },
-    {
-        "title": "null",
-        "severity": 5,
-        "_id": "2vW5T9",
-        "createdAt": 1754155638036,
-        "labels": []
+        ]
     }
 ]
