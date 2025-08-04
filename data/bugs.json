@@ -1,5 +1,23 @@
 [
     {
+        "title": "b",
+        "severity": 3,
+        "description": "What did the bug cause",
+        "labels": [],
+        "_id": "w0Ow7E",
+        "createdAt": 1754323454561
+    },
+    {
+        "title": "404 Coffee Not Found",
+        "severity": 2,
+        "_id": "C0FF33",
+        "description": "What did the bug cause",
+        "createdAt": 1722768000000,
+        "labels": [
+            "need-CR"
+        ]
+    },
+    {
         "title": "asd",
         "severity": 10,
         "_id": "Lk5SlB",
@@ -13,9 +31,7 @@
         "_id": "U3z3OH",
         "description": "What did the bug cause",
         "createdAt": 1754030991196,
-        "labels": [
-            "critical"
-        ]
+        "labels": []
     },
     {
         "title": "Infinite Loop Detected",
@@ -24,23 +40,7 @@
         "description": "What did the bug cause",
         "createdAt": 1722768000000,
         "labels": [
-            "need-CR"
+            "critical"
         ]
-    },
-    {
-        "title": "Keyboard Not Found",
-        "severity": 4,
-        "_id": "K3YB0RD",
-        "description": "What did the bug cause",
-        "createdAt": 1722768000000,
-        "labels": []
-    },
-    {
-        "title": "404 Coffee Not Found",
-        "severity": 2,
-        "_id": "C0FF33",
-        "description": "What did the bug cause",
-        "createdAt": 1722768000000,
-        "labels": []
     }
 ]

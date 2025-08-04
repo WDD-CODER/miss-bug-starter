@@ -12,12 +12,18 @@ app.use(cookieParser())
 app.use(express.json())
 
 app.get('/api/bug', (req, res) => {
+    
     const filter = {
         txt: req.query.txt || '',
         minSeverity: +req.query.minSeverity || 0,
     }
 
-    bugService.query(filter)
+    const sort = {
+        sortBy: req.query.sortBy || '',
+        sortDir:req.query.sortDir || 1
+    }
+
+    bugService.query(filter, sort)
         .then(bugs => res.send(bugs))
         .catch(err => {
             loggerService.error(err)

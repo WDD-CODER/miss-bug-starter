@@ -11,17 +11,28 @@ export const bugService = {
     getEmptyBug,
 }
 
-function query(filterBy = {}) {
+function query(filter, sort) {
     let bugsForDisplay = bugs
 
-    if (filterBy.txt) {
-        const regExp = new RegExp(filterBy.txt, 'i')
+    bugsForDisplay = bugsForDisplay.sort((bugA, bugB) => bugA.title.localeCompare(bugB.title) * sort.sortDir)
+
+    if (filter.txt) {
+        const regExp = new RegExp(filter.txt, 'i')
         bugsForDisplay = bugsForDisplay.filter(bug => regExp.test(bug.title))
     }
 
-    if (filterBy.minSeverity) {
-        bugsForDisplay = bugsForDisplay.filter(bug => bug.severity >= filterBy.minSeverity)
+    if (filter.minSeverity) {
+        bugsForDisplay = bugsForDisplay.filter(bug => bug.severity >= filter.minSeverity)
     }
+
+    if (sort.sortBy === 'severity') {
+        bugsForDisplay = bugsForDisplay.sort((bugA, bugB) => (bugA.severity - bugB.severity) * sort.sortDir)
+    }
+    if (sort.sortBy === 'createdAt') {
+        bugsForDisplay = bugsForDisplay.sort((bugA, bugB) => (bugA.createdAt - bugB.createdAt) * sort.sortDir)
+    }
+
+
 
     return Promise.resolve(bugsForDisplay)
 }

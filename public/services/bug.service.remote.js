@@ -35,7 +35,7 @@ function save(bug) {
 }
 
 function getDefaultFilter() {
-    return { txt: '', minSeverity: 0 }
+    return { txt: '', minSeverity: 0, sortby:'',sortDir: 1 }
 }
 
 function getVisitedBugs() {

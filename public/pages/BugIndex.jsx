@@ -64,6 +64,7 @@ export function BugIndex() {
     }
 
     function onSetFilterBy(filterBy) {
+        
         setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
     }
 
