@@ -10,17 +10,24 @@ const app = express()
 
 app.use(express.static('public'))
 app.use(cookieParser())
+app.use(express.json())
 
 app.get('/api/bug', (req, res) => {
-const filterBy={
-    txt: req.query.txt,
-    minSeverity: +req.query.minSeverity
-    // pageIdx: req.query.pageIdx,
-    // label: req.query.label,
-}
+    
+    const filter = {
+        txt: req.query.txt || '',
+        minSeverity: +req.query.minSeverity || 0,
 
+        // pageIdx: req.query.pageIdx,
+        // label: req.query.label,
+    }
 
-    bugService.query(filterBy)
+    // const sort = {
+    //     sortBy: +req.query.minSeverity,
+    //     sortDir: +req.query.sortDir,
+    // }
+
+    bugService.query(filter)
         .then(bugs => res.send(bugs))
         .catch(err => {
             loggerService.error(err)
@@ -28,16 +35,38 @@ const filterBy={
         })
 })
 
-app.get('/api/bug/save', (req, res) => {
-    loggerService.debug('req.query', req.query)
-    const { title, severity, _id, description, label = ''} = req.query
+app.post('/api/bug', (req, res) => {
+    loggerService.debug('req.query', req.body)
+
+    const { title, severity, description, labels =[] } = req.body
 
     const bug = {
-        title: title || 'no title',
+        title: title || 'No Title',
+        severity: +severity,
+        description,
+        labels
+    }
+
+    bugService.save(bug)
+        .then(savedBug => res.send(savedBug))
+        .catch(err => {
+            loggerService.error(err)
+            res.status(400).send(err)
+        })
+})
+
+app.put('/api/bug', (req, res) => {
+    console.log('req.body', req.body)
+
+    loggerService.debug('req.query', req.body)
+    const { title, severity, _id, description, labels = [] } = req.body
+
+    const bug = {
+        title: title || 'No Title',
         severity: +severity,
         _id,
         description,
-        label
+        labels
     }
 
     bugService.save(bug)
@@ -61,6 +90,7 @@ app.get('/api/bug/pdf', (req, res) => {
         })
 })
 
+// לא טוב להעביר אצ הארור כמו ארור הרי הוא רק צריך לקבל מלל מסביר מינימלי
 
 app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
@@ -70,7 +100,7 @@ app.get('/api/bug/:bugId', (req, res) => {
     bugService.getById(bugId)
         .then(bug => {
             console.log('User visited at the following bugs:', visitedBugs)
-            if (!visitedBugs) res.cookie('visitedBugs', bugId, { maxAge: 1000 * 1000 * 7 })
+            if (!visitedBugs) res.cookie('visitedBugs', bugId, { maxAge: 1000 * 7 })
             else {
                 if (visitedBugs.includes(bugId)) return res.send(bug)
                 else {
@@ -88,7 +118,7 @@ app.get('/api/bug/:bugId', (req, res) => {
 
 })
 
-app.get('/api/bug/:bugId/remove', (req, res) => {
+app.delete('/api/bug/:bugId/remove', (req, res) => {
     const bugId = req.params.bugId
     bugService.remove(bugId)
         .then(() => res.send(`bug ${bugId} removed`))

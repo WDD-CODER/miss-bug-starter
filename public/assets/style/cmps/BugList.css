@@ -24,6 +24,18 @@
     gap: .3em;
 }
 
+
 .bug-list .actions button:last-child {
     margin-inline-start: auto;
+}
+
+.bug-list .labels {
+    display: flex;
+    gap: .3em;
+    /* background-color:#a1f2f2; */
+}
+
+.bug-list .labels button {
+    color: black;
+    background-color:#a1f2f2;
 }

@@ -1221,3 +1221,237 @@
 3.8.2025, 16:17:08 - INFO - Server listening on port http://127.0.0.1:3030/
 3.8.2025, 16:17:47 - INFO - Server listening on port http://127.0.0.1:3030/
 3.8.2025, 16:20:56 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:23:40 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:23:42 - DEBUG - req.query | {}
+3.8.2025, 16:23:43 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:27:18 - DEBUG - req.query | {"title":"Bug 1754225228131","description":"'shit'"}
+3.8.2025, 16:27:19 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:27:52 - DEBUG - req.query | {"title":"no title","description":"shit and a half"}
+3.8.2025, 16:27:53 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:28:15 - DEBUG - req.query | {"title":"cccccccccccccccccccccccccc","description":"333333333333333333333333333"}
+3.8.2025, 16:28:16 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:29:01 - DEBUG - req.query | {"title":"cccccccccccccccccccccccccc","description":"333333333333333333333333333"}
+3.8.2025, 16:29:02 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:29:09 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:29:12 - DEBUG - req.query | {"title":"cccccccccccccccccccccccccc","description":"333333333333333333333333333"}
+3.8.2025, 16:29:13 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:29:24 - DEBUG - req.query | {"title":"cccccccccccccccccccccccccc","description":"33333333333333333333333333"}
+3.8.2025, 16:29:24 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:30:04 - DEBUG - req.query | {}
+3.8.2025, 16:30:05 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:30:09 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:30:11 - DEBUG - req.query | {}
+3.8.2025, 16:30:12 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:30:18 - DEBUG - req.query | {}
+3.8.2025, 16:30:18 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:31:30 - DEBUG - req.query | {"title":"null","severity":"5","_id":"2vW5T9"}
+3.8.2025, 16:31:31 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:31:56 - DEBUG - req.query | {"severity":"1000","_id":"STtxY6"}
+3.8.2025, 16:31:57 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:32:37 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:33:03 - DEBUG - req.query | {"severity":"1000","title":"dandan"}
+3.8.2025, 16:33:04 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:33:28 - DEBUG - req.query | {"severity":"1000","title":"dandan"}
+3.8.2025, 16:33:29 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:33:45 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:33:48 - DEBUG - req.query | {"severity":"1000","title":"dandan"}
+3.8.2025, 16:33:49 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:36:13 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:36:14 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:36:16 - DEBUG - req.query | {}
+3.8.2025, 16:36:17 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:37:12 - DEBUG - req.query | {}
+3.8.2025, 16:37:13 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:38:12 - DEBUG - req.query | {}
+3.8.2025, 16:38:12 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:39:21 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:39:43 - DEBUG - req.query | {}
+3.8.2025, 16:39:43 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:40:30 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:42:33 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:42:35 - DEBUG - req.query | {}
+3.8.2025, 16:42:36 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:42:56 - DEBUG - req.query | {}
+3.8.2025, 16:42:57 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:43:08 - DEBUG - req.query | {}
+3.8.2025, 16:43:09 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:43:43 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:43:46 - DEBUG - req.query | {}
+3.8.2025, 16:43:47 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:46:10 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:46:12 - DEBUG - req.query | {}
+3.8.2025, 16:46:13 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:46:59 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:47:02 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:53:09 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:53:14 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:53:17 - DEBUG - req.query | {}
+3.8.2025, 16:53:18 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:54:16 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:54:21 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:54:24 - DEBUG - req.query | {}
+3.8.2025, 16:54:25 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:55:22 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:55:29 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:57:00 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:57:33 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:57:35 - DEBUG - req.query | {"title":"xaxaxxxx","severity":565}
+3.8.2025, 16:58:01 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 16:58:06 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:00:23 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:01:23 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:01:35 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:01:39 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:01:44 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:01:46 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:03:29 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:03:48 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:04:24 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:04:28 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:04:30 - DEBUG - req.query | {"title":"xaxaxxxx","severity":565}
+3.8.2025, 17:04:36 - DEBUG - req.query | {"params":{"title":"Bug 1754229874752","severity":3,"description":"What did the bug cause"}}
+3.8.2025, 17:05:50 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:05:58 - DEBUG - req.query | {"title":"Bug 1754229957270","severity":3,"description":"What did the bug cause"}
+3.8.2025, 17:06:15 - DEBUG - req.query | {"title":"xaxaxxxx","severity":199999,"_id":"wTK64C","label":"","createdAt":1754229836982,"description":"What did the bug cause"}
+3.8.2025, 17:06:18 - DEBUG - req.query | {"title":"xaxaxxxx","severity":199999,"_id":"wTK64C","description":"What did the bug cause","label":"need-CR"}
+3.8.2025, 17:53:02 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 17:59:16 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 18:00:01 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 18:19:10 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 18:19:15 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 18:37:19 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 19:09:50 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 19:45:34 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 19:48:07 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 19:49:38 - DEBUG - req.query | 
+3.8.2025, 19:51:33 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 19:52:12 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 19:53:23 - DEBUG - req.query | {"title":"xaxaxxxx","severity":565}
+3.8.2025, 19:54:01 - DEBUG - req.query | {"title":"No Title","severity":null,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+3.8.2025, 19:54:25 - DEBUG - req.query | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+3.8.2025, 19:55:21 - DEBUG - req.query | {"title":"new guy","severity":null,"label":"good"}
+3.8.2025, 19:55:43 - DEBUG - req.query | {"title":"new guy","severity":null,"label":"good"}
+3.8.2025, 19:56:12 - DEBUG - req.query | {"title":"new guy","severity":null,"label":"good"}
+3.8.2025, 19:56:41 - DEBUG - req.query | {"title":"xaxaxxxx","severity":1000,"_id":"jsA6AH","label":"","createdAt":1754240003089,"description":"c"}
+3.8.2025, 19:56:52 - DEBUG - req.query | {"title":null,"severity":3,"description":"What did the bug cause"}
+3.8.2025, 19:57:13 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 19:57:20 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause"}
+3.8.2025, 19:57:31 - DEBUG - req.query | {"title":"Bug 1754225228131","severity":5,"_id":"JCN7WP","description":"cvvvv","label":"","createdAt":1754225230146}
+3.8.2025, 19:58:30 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 20:01:48 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 20:02:18 - ERROR - can't find bug to remove
+3.8.2025, 20:03:39 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 20:05:06 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 20:05:57 - INFO - Server listening on port http://127.0.0.1:3030/
+3.8.2025, 20:06:03 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 8:44:40 - ERROR - can't find bug to remove
+4.8.2025, 8:45:04 - DEBUG - req.query | {"title":"new guy","severity":555,"label":"good"}
+4.8.2025, 8:45:47 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 8:45:50 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 8:50:35 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 9:10:34 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 9:10:51 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 9:11:14 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l"]}
+4.8.2025, 9:19:22 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR"]}
+4.8.2025, 9:19:27 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR",""]}
+4.8.2025, 9:19:55 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR",""]}
+4.8.2025, 9:20:08 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:20:19 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:20:27 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:22:05 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:22:07 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:22:09 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:22:10 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:22:19 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:22:54 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:23:28 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:23:34 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["c","r","i","t","i","c","a","l","need-CR","","critical"]}
+4.8.2025, 9:24:53 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 9:25:08 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 9:25:20 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["need-CR","critical","dev-branch"]}
+4.8.2025, 9:36:07 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 9:49:56 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 9:54:13 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["critical","dev-branch"]}
+4.8.2025, 9:58:03 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["critical"]}
+4.8.2025, 10:01:26 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":[]}
+4.8.2025, 10:02:13 - DEBUG - req.query | {"title":"new guy","severity":555,"label":[],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:02:34 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","label":["need-CR"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:04:42 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","label":[],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:06:30 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","label":["need-CR"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:06:52 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["critical"]}
+4.8.2025, 10:06:55 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","label":["need-CR","critical"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:07:20 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["critical","need-CR"]}
+4.8.2025, 10:07:50 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"label":["critical","need-CR","dev-branch"]}
+4.8.2025, 10:08:14 - DEBUG - req.query | {"title":"new guy","severity":555,"label":["need-CR"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:09:30 - DEBUG - req.query | {"title":"new guy","severity":555,"label":["need-CR","dev-branch"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:15:56 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:17:28 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","label":["need-CR","critical","dev-branch"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:23:57 - DEBUG - req.query | {"title":"new guy","severity":555,"label":["need-CR","dev-branch","critical"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:23:59 - DEBUG - req.query | {"title":"new guy","severity":555,"label":["need-CR","dev-branch"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:24:35 - DEBUG - req.query | {"title":"new guy","severity":555,"label":["need-CR","dev-branch","critical"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:24:48 - DEBUG - req.query | {"title":"new guy","severity":555,"label":["need-CR","dev-branch"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:24:50 - DEBUG - req.query | {"title":"new guy","severity":555,"label":["need-CR","dev-branch","critical"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:29:46 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","label":["need-CR","critical"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:32:41 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:32:45 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["need-CR"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:33:32 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["need-CR"],"_id":"r8aByc","createdAt":1754240240545,"label":""}
+4.8.2025, 10:33:40 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","dev-branch"]}
+4.8.2025, 10:33:53 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","dev-branch"],"label":""}
+4.8.2025, 10:34:11 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","dev-branch"],"label":""}
+4.8.2025, 10:35:05 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["need-CR"],"_id":"r8aByc","createdAt":1754240240545,"label":""}
+4.8.2025, 10:35:09 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":[],"_id":"r8aByc","createdAt":1754240240545,"label":""}
+4.8.2025, 10:35:12 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","dev-branch"],"label":""}
+4.8.2025, 10:35:12 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["dev-branch"],"label":""}
+4.8.2025, 10:35:13 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":[],"label":""}
+4.8.2025, 10:35:14 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical"],"label":""}
+4.8.2025, 10:36:13 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["need-CR","critical"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:36:14 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["need-CR"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:36:14 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":[],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 10:36:37 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:36:39 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["need-CR","dev-branch"],"_id":"dUtVM2","createdAt":1754286304970,"label":""}
+4.8.2025, 10:36:44 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["need-CR","dev-branch"],"_id":"dUtVM2","createdAt":1754286304970,"label":""}
+4.8.2025, 10:37:01 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["need-CR"],"_id":"dUtVM2","createdAt":1754286304970,"label":""}
+4.8.2025, 10:37:22 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:37:23 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","dev-branch"],"label":""}
+4.8.2025, 10:37:28 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["need-CR","dev-branch"],"label":""}
+4.8.2025, 10:38:05 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["dev-branch","critical"],"_id":"dUtVM2","createdAt":1754286304970,"label":""}
+4.8.2025, 10:38:29 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:38:42 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["need-CR"],"_id":"r8aByc","createdAt":1754240240545,"label":""}
+4.8.2025, 10:41:07 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:41:12 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:41:21 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:42:34 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:42:45 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["need-CR"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:42:52 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":[],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:42:57 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","dev-branch"]}
+4.8.2025, 10:42:58 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical"]}
+4.8.2025, 10:43:00 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","need-CR"]}
+4.8.2025, 10:44:41 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical"]}
+4.8.2025, 10:44:45 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","need-CR"]}
+4.8.2025, 10:44:55 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:45:03 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:46:51 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","need-CR","dev-branch"]}
+4.8.2025, 10:47:53 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["critical"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 10:48:32 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 10:48:36 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["critical","need-CR"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 11:11:14 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["critical","need-CR","dev-branch"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 11:11:18 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["critical","dev-branch"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 11:11:19 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["critical"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 11:11:21 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["critical","need-CR"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 11:12:06 - DEBUG - req.query | {"title":"ff","severity":3,"description":"What did the bug cause","labels":["critical"],"_id":"r8aByc","createdAt":1754240240545}
+4.8.2025, 11:13:19 - DEBUG - req.query | {"title":"Bug 1754295196505","severity":3,"description":"What did the bug cause"}
+4.8.2025, 11:13:22 - DEBUG - req.query | {"title":"Bug 1754295196505","severity":3,"description":"What did the bug cause","labels":["need-CR"],"_id":"KN3Upw","createdAt":1754295199635}
+4.8.2025, 11:14:11 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 11:14:37 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["need-CR","critical"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 11:14:39 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["need-CR","critical","dev-branch"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 11:15:16 - DEBUG - req.query | {"title":"new guy","severity":555,"label":"good"}
+4.8.2025, 11:15:57 - DEBUG - req.query | {"title":"Bug 1754295354323","severity":3,"description":"What did the bug cause"}
+4.8.2025, 11:16:14 - DEBUG - req.query | {"title":"Bug 1754295354323","severity":3,"description":"What did the bug cause","labels":[],"_id":"vNRLei","createdAt":1754295357974}
+4.8.2025, 11:16:17 - DEBUG - req.query | {"title":"Bug 1754295354323","severity":3,"_id":"vNRLei","description":"What did the bug cause","labels":["need-CR"]}
+4.8.2025, 11:16:20 - DEBUG - req.query | {"title":"Bug 1754295354323","severity":3,"_id":"vNRLei","description":"What did the bug cause","labels":["need-CR"]}
+4.8.2025, 11:16:24 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical","need-CR"]}
+4.8.2025, 11:16:25 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":["critical"]}
+4.8.2025, 11:16:25 - DEBUG - req.query | {"title":"null","severity":5,"_id":"2vW5T9","createdAt":1754155638036,"labels":[]}
+4.8.2025, 11:16:31 - DEBUG - req.query | {"title":"new guy","severity":555,"labels":["need-CR","dev-branch"],"_id":"dUtVM2","createdAt":1754286304970}
+4.8.2025, 11:16:37 - DEBUG - req.query | {"title":"Bug 1754295196505","severity":3,"description":"What did the bug cause","labels":[],"_id":"KN3Upw","createdAt":1754295199635}
+4.8.2025, 11:16:40 - DEBUG - req.query | {"title":"Bug 1754295354323","severity":3,"description":"What did the bug cause","labels":["need-CR","dev-branch"],"_id":"vNRLei","createdAt":1754295357974}

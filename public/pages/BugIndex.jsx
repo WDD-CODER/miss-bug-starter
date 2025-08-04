@@ -51,7 +51,7 @@ export function BugIndex() {
 
     function onEditBug(bug) {
         const severity = +prompt('New severity?', bug.severity)
-        const description = prompt('What Happened?',bug.description || 'What did the bug cause')
+        const description = prompt('What Happened?', bug.description || 'What did the bug cause')
 
         const bugToSave = { ...bug, severity, description }
 
@@ -72,15 +72,40 @@ export function BugIndex() {
     function onResetCookie() {
         bugService.resetCookie()
             .then(() => setVisitedBugs(''))
-            .catch(err => showErrorMsg(' Fail to remove Cookie ',err))
+            .catch(err => showErrorMsg(' Fail to remove Cookie ', err))
 
     }
 
     function onAddLabel(bug, ev) {
-        bug.label = ev.target.value
+        const addLabel = ev.target.value
+        if (bug.labels.includes(addLabel)) return
+        else bug.labels.push(addLabel)
+        const bugIdx = bugs.findIndex(curBug => curBug._id === bug._id)
+        const updatedBugs = [...bugs]
+        updatedBugs.splice(bugIdx, 1, bug)
         bugService.save(bug)
-            .then(() => showSuccessMsg('set Bug label'))
-            .catch(err => showErrorMsg('problem seating bug label', err))
+            .then(() => {
+                setBugs(updatedBugs)
+                showSuccessMsg('add Bug labels')
+            })
+            .catch(err => showErrorMsg('problem adding bug label', err))
+    }
+
+
+    function onRemoveLabel(bug, labelToRemove) {
+        const labelIdx = bug.labels.findIndex(label => label === labelToRemove)
+        bug.labels.splice(labelIdx, 1)
+        const bugIdx = bugs.findIndex(curBug => curBug._id === bug._id)
+        const updatedBugs = [...bugs]
+        updatedBugs[bugIdx] = bug
+        bugService.save(bug)
+            .then(() => {
+                setBugs(updatedBugs)
+                showSuccessMsg('removed Bug labels')
+            })
+            .catch(err => showErrorMsg('problem removing bug label', err))
+
+
     }
 
     function onSetVisitedBugs() {
@@ -107,6 +132,8 @@ export function BugIndex() {
             onRemoveBug={onRemoveBug}
             onEditBug={onEditBug}
             onAddLabel={onAddLabel}
+            onRemoveLabel={onRemoveLabel}
+
         />
     </section>
 }

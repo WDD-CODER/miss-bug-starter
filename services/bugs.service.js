@@ -7,7 +7,8 @@ export const bugService = {
     query,
     getById,
     remove,
-    save
+    save,
+    getEmptyBug
 }
 
 function query(filterBy ={}) {
@@ -15,11 +16,11 @@ function query(filterBy ={}) {
 
     if (filterBy.txt) {
         const regExp = new RegExp(filterBy.txt, 'i')
-        bugsForDisplay = bugs.filter(bug => regExp.test(bug.title))
+        bugsForDisplay = bugsForDisplay.filter(bug => regExp.test(bug.title))
     }
 
     if (filterBy.minSeverity) {
-        bugsForDisplay = bugs.filter(bug => bug.severity >= filterBy.minSeverity)
+        bugsForDisplay = bugsForDisplay.filter(bug => bug.severity >= filterBy.minSeverity)
     }
 
     return Promise.resolve(bugsForDisplay)
@@ -60,4 +61,15 @@ function save(bugToSave) {
 
 function _saveBugs() {
     return writeJsonFile('./data/bugs.json', bugs)
+}
+
+function getEmptyBug() {
+    
+    const emptyBug = {
+        title: title || '',
+        description: description || '',
+        severity: severity || 0,
+        // labels: labels || []
+    }
+
 }

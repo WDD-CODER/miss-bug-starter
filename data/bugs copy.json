@@ -1,5 +1,28 @@
 [
   {
+    "title": "no title",
+    "severity": null,
+    "_id": "aJ3O4n",
+    "label": "",
+    "createdAt": 1754227422741
+  },
+  {
+    "title": "Bug 1754225773354",
+    "severity": 3,
+    "_id": "jFB2jc",
+    "description": "What did the bug cause",
+    "label": "",
+    "createdAt": 1754225776585
+  },
+  {
+    "title": "Bug 1754225228131",
+    "severity": 3,
+    "_id": "JCN7WP",
+    "description": "What did the bug cause",
+    "label": "",
+    "createdAt": 1754225230146
+  },
+  {
     "title": "Login crash on timeout",
     "severity": 3,
     "_id": "STtxY6",
@@ -7,31 +30,10 @@
     "createdAt": 1754155538440
   },
   {
-    "title": "Form submit duplicates data",
-    "severity": 1,
-    "_id": "LkA3pZ",
-    "description": "Submitting twice causes double entries",
-    "createdAt": 1754157771123
-  },
-  {
-    "title": "Mobile layout shifts on scroll",
-    "severity": 2,
-    "_id": "QzK8dJ",
-    "description": "Header overlaps content on iOS",
-    "createdAt": 1754157920984
-  },
-  {
-    "title": "Validation skips email field",
-    "severity": 4,
-    "_id": "XvR1mB",
-    "description": "User can proceed without entering email",
-    "createdAt": 1754158015000
-  },
-  {
-    "title": "PDF export returns empty file",
+    "title": "null",
     "severity": 5,
-    "_id": "HjT6cN",
-    "description": "Generated file is 0 bytes with no content",
-    "createdAt": 1754158123456
+    "_id": "2vW5T9",
+    "createdAt": 1754155638036,
+    "label": ""
   }
 ]
