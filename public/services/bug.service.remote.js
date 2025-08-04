@@ -45,7 +45,7 @@ function getVisitedBugs() {
 }
 
 function resetCookie() {
-    return axios.get(COOKIE_URL + '/remove')
+    return axios.delete(COOKIE_URL)
         .then(res => res.data)
         .catch(err => showErrorMsg('problem resetting bugs visits'))
 }

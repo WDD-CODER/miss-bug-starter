@@ -13,7 +13,6 @@ export const bugService = {
 
 function query(filter, sort) {
     let bugsForDisplay = bugs
-
     bugsForDisplay = bugsForDisplay.sort((bugA, bugB) => bugA.title.localeCompare(bugB.title) * sort.sortDir)
 
     if (filter.txt) {
@@ -25,11 +24,12 @@ function query(filter, sort) {
         bugsForDisplay = bugsForDisplay.filter(bug => bug.severity >= filter.minSeverity)
     }
 
-    if (sort.sortBy === 'severity') {
-        bugsForDisplay = bugsForDisplay.sort((bugA, bugB) => (bugA.severity - bugB.severity) * sort.sortDir)
+    if (filter.label) {
+        bugsForDisplay = bugsForDisplay.filter(bug => bug.labels.includes(filter.label))
     }
-    if (sort.sortBy === 'createdAt') {
-        bugsForDisplay = bugsForDisplay.sort((bugA, bugB) => (bugA.createdAt - bugB.createdAt) * sort.sortDir)
+
+    if (sort.sortBy === 'severity' || sort.sortBy === 'createdAt') {
+        bugsForDisplay = bugsForDisplay.sort((bugA, bugB) => (bugA[sort.sortBy] - bugB[sort.sortBy]) * sort.sortDir)
     }
 
 

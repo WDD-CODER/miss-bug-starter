@@ -9,6 +9,7 @@ export function BugIndex() {
     const [bugs, setBugs] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
     const [visitedBugs, setVisitedBugs] = useState()
+    console.log("🚀 ~ BugIndex ~ visitedBugs:", visitedBugs)
 
     useEffect(loadBugs, [filterBy])
     useEffect(onSetVisitedBugs, [])
@@ -109,7 +110,8 @@ export function BugIndex() {
             .catch(err => showErrorMsg(' Failed fetching bugs from Server'))
     }
 
-    const sumOfVisitedBugs = visitedBugs ? visitedBugs.split(',').length : 0
+    // console.log("🚀 ~ BugIndex ~ visitedBugs:", visitedBugs.length)
+    const sumOfVisitedBugs = visitedBugs ? visitedBugs.length : 0
 
     return <section className="bug-index main-content">
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
