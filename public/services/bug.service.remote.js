@@ -1,7 +1,5 @@
-
 const BASE_URL = '/api/bug'
 const COOKIE_URL = '/cookie'
-
 
 export const bugService = {
     query,
@@ -11,7 +9,6 @@ export const bugService = {
     getDefaultFilter,
     getVisitedBugs,
     resetCookie,
-
 }
 
 function query(filterBy) {
@@ -25,33 +22,31 @@ function getById(bugId) {
 }
 
 function remove(bugId) {
-    return axios.get(`${BASE_URL}/${bugId}/remove`)
+    return axios.delete(`${BASE_URL}/${bugId}/remove`)
         .then(res => res.data)
 }
 
 function save(bug) {
-    console.log("🚀 ~ save ~ bug:", bug)
     if (bug._id) {
         return axios.put(BASE_URL, bug).then(res => res.data).catch(console.error)
+    } else {
+        return axios.post(BASE_URL, bug).then(res => res.data).catch(console.error)
     }
-    else  return axios.post(BASE_URL, bug).then(res => res.data).catch(console.error)
 }
 
 function getDefaultFilter() {
-    return { txt: '', minSeverity: 0 }
+    return { txt: '', minSeverity: 0, sortby:'',sortDir: 1 }
 }
 
 function getVisitedBugs() {
     return axios.get(COOKIE_URL)
         .then(res => res.data)
-        .then(res => res)
-        .catch(err => showErrorMsg('problem showing bugs visits'))
+        .catch(err => showErrorMsg('problem fetching visited bugs'))
 }
 
 function resetCookie() {
     return axios.get(COOKIE_URL + '/remove')
         .then(res => res.data)
-        .then(res => res)
-        .catch(err => showErrorMsg('problem resting bugs visits'))
+        .catch(err => showErrorMsg('problem resetting bugs visits'))
 }
 
