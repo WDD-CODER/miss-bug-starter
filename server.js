@@ -17,6 +17,7 @@ app.get('/api/bug', (req, res) => {
     const filter = {
         txt: req.query.txt || '',
         minSeverity: +req.query.minSeverity || 0,
+        label:req.query.label || ''
     }
 
     const sort = {
@@ -71,6 +72,7 @@ app.put('/api/bug', (req, res) => {
         })
 })
 
+
 app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
     let visitedBugs = req.cookies.visitedBugs || []
@@ -88,7 +90,9 @@ app.get('/api/bug/:bugId', (req, res) => {
         })
 })
 
-app.delete('/api/bug/:bugId/remove', (req, res) => {
+app.delete('/api/bug/:bugId', (req, res) => {
+    console.log('variable')
+    
     const bugId = req.params.bugId
     bugService.remove(bugId)
         .then(() => res.send(`bug ${bugId} removed`))
@@ -98,10 +102,23 @@ app.delete('/api/bug/:bugId/remove', (req, res) => {
         })
 })
 
-app.get('/cookie/remove', (req, res) => {
+app.delete('/cookie', (req, res) => {
     res.clearCookie('visitedBugs')
     res.send(`We've cleared your seen bugs count. You can see more now`)
 })
+
+app.get('/cookie', (req, res) => {
+    const visitedBugs = req.cookies.visitedBugs
+    console.log("🚀 ~ visitedBugs:", visitedBugs)
+    res.send(visitedBugs)
+})
+
+
+// app.get('/file/pdf', (req, res) => {
+//     const visitedBugs = req.cookies.visitedBugs
+//     console.log("🚀 ~ visitedBugs:", visitedBugs)
+//     res.send(visitedBugs)
+// })
 
 
 app.get('*all', (req, res) => {
