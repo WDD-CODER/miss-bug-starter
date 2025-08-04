@@ -7,11 +7,23 @@ export const bugService = {
     query,
     getById,
     remove,
-    save
+    save,
+    getEmptyBug,
 }
 
-function query() {
-    return Promise.resolve(bugs)
+function query(filterBy = {}) {
+    let bugsForDisplay = bugs
+
+    if (filterBy.txt) {
+        const regExp = new RegExp(filterBy.txt, 'i')
+        bugsForDisplay = bugsForDisplay.filter(bug => regExp.test(bug.title))
+    }
+
+    if (filterBy.minSeverity) {
+        bugsForDisplay = bugsForDisplay.filter(bug => bug.severity >= filterBy.minSeverity)
+    }
+
+    return Promise.resolve(bugsForDisplay)
 }
 
 function getById(bugId) {
@@ -30,23 +42,28 @@ function remove(bugId) {
     return _saveBugs()
 }
 
-
 function save(bugToSave) {
-
     if (bugToSave._id) {
         const idx = bugs.findIndex(bug => bug._id === bugToSave._id)
         bugs[idx] = { ...bugs[idx], ...bugToSave }
-    }
-    else {
+    } else {
         bugToSave._id = makeId()
-        bugToSave.created = Date.now()
+        bugToSave.createdAt = Date.now()
         bugs.unshift(bugToSave)
     }
 
-    return _saveBugs()
-        .then(() => bugToSave)
+    return _saveBugs().then(() => bugToSave)
 }
 
 function _saveBugs() {
     return writeJsonFile('./data/bugs.json', bugs)
+}
+
+function getEmptyBug() {
+    return {
+        title: '',
+        description: '',
+        severity: 0,
+        labels: []
+    }
 }

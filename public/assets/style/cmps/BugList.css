@@ -26,4 +26,42 @@
 
 .bug-list .actions button:last-child {
     margin-inline-start: auto;
+}.bug-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+
+    padding: 0;
+    list-style: none;
+}
+
+.bug-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    padding: .7em;
+    background-color: var(--bg1);
+    border-radius: .2em;
+
+    color: whitesmoke;
+}
+
+.bug-list .actions {
+    display: flex;
+    gap: .3em;
+}
+
+.bug-list .actions button:last-child {
+    margin-inline-start: auto;
+}
+
+.bug-list .labels {
+    display: flex;
+    gap: .3em;
+}
+
+.bug-list .labels button {
+    color: black;
+    background-color: #a1f2f2;
 }

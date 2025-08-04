@@ -645,3 +645,24 @@
 1.8.2025, 14:27:19 - INFO - Server listening on port http://127.0.0.1:3030/
 1.8.2025, 14:27:51 - ERROR - Couldn't find bug K3YB0RDc To remove
 1.8.2025, 14:29:23 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 11:29:15 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 11:34:15 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 11:34:46 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 11:35:05 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 11:35:10 - ERROR - Couldn't find bug save
+4.8.2025, 11:35:49 - ERROR - Couldn't find bug save
+4.8.2025, 11:37:10 - INFO - Server listening on port http://127.0.0.1:3030/
+4.8.2025, 11:37:16 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical"]}
+4.8.2025, 11:37:18 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":[]}
+4.8.2025, 11:37:19 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["dev-branch"]}
+4.8.2025, 11:37:20 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":[]}
+4.8.2025, 11:37:26 - DEBUG - req.body | {"title":"Bug 1754296643454","severity":3,"description":"What did the bug cause"}
+4.8.2025, 11:37:33 - DEBUG - req.body | {"title":"Infinite Loop Detected","severity":3,"_id":"1NF1N1T3","description":"What did the bug cause","createdAt":1722768000000,"labels":["need-CR"]}
+4.8.2025, 11:37:35 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical"]}
+4.8.2025, 11:37:39 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical","need-CR"]}
+4.8.2025, 11:37:40 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical","need-CR","dev-branch"]}
+4.8.2025, 11:37:41 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical","dev-branch"]}
+4.8.2025, 11:37:41 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical"]}
+4.8.2025, 11:37:42 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":[]}
+4.8.2025, 11:37:45 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical"]}
+4.8.2025, 11:39:50 - INFO - Server listening on port http://127.0.0.1:3030/

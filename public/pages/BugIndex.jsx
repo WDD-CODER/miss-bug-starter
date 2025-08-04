@@ -2,17 +2,16 @@ const { useState, useEffect } = React
 
 import { bugService } from '../services/bug.service.remote.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
-
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
 
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
-    const [seenBugs, setSeenBugs] = useState([])
-
+    const [visitedBugs, setVisitedBugs] = useState()
 
     useEffect(loadBugs, [filterBy])
+    useEffect(onSetVisitedBugs, [])
 
     function loadBugs() {
         bugService.query(filterBy)
@@ -20,8 +19,11 @@ export function BugIndex() {
             .catch(err => showErrorMsg(`Couldn't load bugs - ${err}`))
     }
 
-    function onRemoveBug(bugId) {
+    function onDownloadPDF() {
+        window.open('/api/bug/pdf')
+    }
 
+    function onRemoveBug(bugId) {
         bugService.remove(bugId)
             .then(() => {
                 const bugsToUpdate = bugs.filter(bug => bug._id !== bugId)
@@ -48,8 +50,7 @@ export function BugIndex() {
 
     function onEditBug(bug) {
         const severity = +prompt('New severity?', bug.severity)
-        const description = prompt('What Happened?', 'What did the bug cause')
-
+        const description = prompt('What Happened?', bug.description || 'What did the bug cause')
         const bugToSave = { ...bug, severity, description }
 
         bugService.save(bugToSave)
@@ -68,26 +69,53 @@ export function BugIndex() {
 
     function onResetCookie() {
         bugService.resetCookie()
+            .then(() => setVisitedBugs(''))
+            .catch(err => showErrorMsg(' Fail to remove Cookie ', err))
     }
 
-    function onSetSeenBugs() {
-        bugService.getSeenBugs()
-            .then(res => {
-                const count = res.seenBugs
-                setSeenBugs(count)
+    function onAddLabel(bug, ev) {
+        const addLabel = ev.target.value
+        if (bug.labels.includes(addLabel)) return
+        bug.labels.push(addLabel)
+        const bugIdx = bugs.findIndex(curBug => curBug._id === bug._id)
+        const updatedBugs = [...bugs]
+        updatedBugs.splice(bugIdx, 1, bug)
+        bugService.save(bug)
+            .then(() => {
+                setBugs(updatedBugs)
+                showSuccessMsg('add Bug labels')
             })
-            .catch(err => {
-                console.log('err', err);
-                showErrorMsg(' Failed fetching bugs from Server')
-            })
-
+            .catch(err => showErrorMsg('problem adding bug label', err))
     }
+
+    function onRemoveLabel(bug, labelToRemove) {
+        const labelIdx = bug.labels.findIndex(label => label === labelToRemove)
+        bug.labels.splice(labelIdx, 1)
+        const bugIdx = bugs.findIndex(curBug => curBug._id === bug._id)
+        const updatedBugs = [...bugs]
+        updatedBugs[bugIdx] = bug
+        bugService.save(bug)
+            .then(() => {
+                setBugs(updatedBugs)
+                showSuccessMsg('removed Bug labels')
+            })
+            .catch(err => showErrorMsg('problem removing bug label', err))
+    }
+
+    function onSetVisitedBugs() {
+        bugService.getVisitedBugs()
+            .then(res => setVisitedBugs(res))
+            .catch(err => showErrorMsg(' Failed fetching bugs from Server'))
+    }
+
+    const sumOfVisitedBugs = visitedBugs ? visitedBugs.split(',').length : 0
+
     return <section className="bug-index main-content">
-
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
-            <button >{seenBugs.length}</button>
+            <button onClick={onResetCookie}>{sumOfVisitedBugs}</button>
+            <button onClick={onDownloadPDF}>Download PDF</button>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
 
@@ -95,8 +123,8 @@ export function BugIndex() {
             bugs={bugs}
             onRemoveBug={onRemoveBug}
             onEditBug={onEditBug}
-            onSetSeenBugs={onSetSeenBugs}
-            onResetCookie={onResetCookie}
+            onAddLabel={onAddLabel}
+            onRemoveLabel={onRemoveLabel}
         />
     </section>
 }
