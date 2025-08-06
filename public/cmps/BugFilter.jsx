@@ -55,23 +55,23 @@ export function BugFilter({ filterBy, onSetFilterBy }) {
                 </label>
 
                 <label className="sortBy" htmlFor="sortBy" >Sorting By:</label>
-                    <select name="sortBy" id="sortBy" onChange={handleChange}>
-                        <option value="title">Title</option>
-                        <option value="severity">Severity</option>
-                        <option value="createdAt">CreatedAt</option>
-                    </select>
-                    
+                <select name="sortBy" id="sortBy" onChange={handleChange}>
+                    <option value="title">Title</option>
+                    <option value="severity">Severity</option>
+                    <option value="createdAt">CreatedAt</option>
+                </select>
+
                 <br />
-                
-                    <label className="label" htmlFor="label" onChange={handleChange}> Filter by Label:</label>
-                        <select onChange={handleChange} id="label" name="label">
-                            <option value="">Select Label</option>
-                            <option value="critical">critical</option>
-                            <option value="dev-branch">dev-branch</option>
-                            <option value="need-CR">need-CR</option>
-                        </select>
-                    
-              
+
+                <label className="label" htmlFor="label" onChange={handleChange}> Filter by Label:</label>
+                <select onChange={handleChange} id="label" name="label">
+                    <option value="">Select Label</option>
+                    <option value="critical">critical</option>
+                    <option value="dev-branch">dev-branch</option>
+                    <option value="need-CR">need-CR</option>
+                </select>
+
+
 
 
             </form>
