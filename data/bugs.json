@@ -1,46 +1,50 @@
 [
     {
-        "title": "404 Coffee Not Found",
+        "title": "Login button unresponsive on mobile",
+        "severity": 4,
+        "description": "Clicking the login button on small screens does nothing.",
+        "labels": ["critical"],
+        "_id": "hY82kd",
+        "createdAt": 1754610001000
+    },
+    {
+        "title": "Profile picture not saving",
         "severity": 2,
-        "_id": "C0FF33",
-        "description": "What did the bug cause",
-        "createdAt": 1722768000000,
-        "labels": [
-            "need-CR"
-        ]
+        "description": "Uploading a new profile picture shows success but reverts after refresh.",
+        "labels": ["dev-branch"],
+        "_id": "pG73js",
+        "createdAt": 1754610002000
     },
     {
-        "title": "asd",
-        "severity": 10,
-        "_id": "Lk5SlB",
-        "description": "What did the bug cause",
-        "createdAt": 1754031007187,
-        "labels": []
+        "title": "Checkout page stuck at loading spinner",
+        "severity": 8,
+        "description": "Customers cannot complete purchases due to endless loading.",
+        "labels": ["critical", "need-CR"],
+        "_id": "mF29lp",
+        "createdAt": 1754610003000
     },
     {
-        "title": "asd",
+        "title": "Email notifications sent twice",
+        "severity": 5,
+        "description": "Each event triggers two identical email alerts to the same user.",
+        "labels": ["need-CR"],
+        "_id": "aQ81zn",
+        "createdAt": 1754610004000
+    },
+    {
+        "title": "Search results not updating after filter",
         "severity": 3,
-        "_id": "U3z3OH",
-        "description": "What did the bug cause",
-        "createdAt": 1754030991196,
-        "labels": []
+        "description": "Changing the filter shows old results until the page is refreshed.",
+        "labels": ["dev-branch"],
+        "_id": "kL47bv",
+        "createdAt": 1754610005000
     },
     {
-        "title": "b",
-        "severity": 3,
-        "description": "What did the bug cause",
-        "labels": [],
-        "_id": "w0Ow7E",
-        "createdAt": 1754323454561
-    },
-    {
-        "title": "Bug 1754295196505",
-        "severity": 3,
-        "_id": "1NF1N1T3",
-        "description": "What did the bug cause",
-        "createdAt": 1722768000000,
-        "labels": [
-            "critical"
-        ]
+        "title": "Reports exporting in wrong date format",
+        "severity": 6,
+        "description": "Exported CSV files show dates in US format instead of selected locale.",
+        "labels": ["critical"],
+        "_id": "cD65qw",
+        "createdAt": 1754610006000
     }
 ]

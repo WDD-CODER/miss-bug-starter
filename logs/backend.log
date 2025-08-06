@@ -849,3 +849,340 @@
 4.8.2025, 21:30:36 - INFO - Server listening on port http://127.0.0.1:3030/
 4.8.2025, 21:30:40 - INFO - Server listening on port http://127.0.0.1:3030/
 4.8.2025, 21:30:54 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 18:44:14 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 18:58:46 - ERROR - Couldn't find bug pdf
+5.8.2025, 19:00:18 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:00:24 - ERROR - Couldn't find bug pdf
+5.8.2025, 19:01:01 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:02:43 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:02:53 - ERROR - Couldn't find bug pdf
+5.8.2025, 19:04:45 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:05:46 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:06:22 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:07:07 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical"]}
+5.8.2025, 19:07:09 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical","need-CR"]}
+5.8.2025, 19:07:09 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":["critical"]}
+5.8.2025, 19:07:10 - DEBUG - req.body | {"title":"asd","severity":3,"_id":"U3z3OH","description":"What did the bug cause","createdAt":1754030991196,"labels":[]}
+5.8.2025, 19:10:44 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:36:33 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:39:49 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:40:30 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:40:54 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:40:57 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:41:34 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:42:00 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:42:25 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:43:05 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:44:44 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:48:43 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:48:48 - ERROR - can't find bug to remove
+5.8.2025, 19:50:48 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:51:10 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:51:29 - ERROR - can't find bug to remove
+5.8.2025, 19:52:00 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:53:11 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:53:17 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:53:39 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 19:53:47 - DEBUG - req.body | {"title":"Bug 1754412826108","severity":3,"description":"What did the bug cause"}
+5.8.2025, 19:53:48 - DEBUG - req.body | {"title":"Bug 1754412827713","severity":3,"description":"What did the bug cause"}
+5.8.2025, 19:53:49 - DEBUG - req.body | {"title":"Bug 1754412828637","severity":3,"description":"What did the bug cause"}
+5.8.2025, 19:53:50 - DEBUG - req.body | {"title":"Bug 1754412829438","severity":3,"description":"What did the bug cause"}
+5.8.2025, 19:53:50 - DEBUG - req.body | {"title":"Bug 1754412830368","severity":3,"description":"What did the bug cause"}
+5.8.2025, 19:53:52 - DEBUG - req.body | {"title":"Bug 1754412831344","severity":3,"description":"What did the bug cause"}
+5.8.2025, 19:55:39 - INFO - Server listening on port http://127.0.0.1:3030/
+5.8.2025, 20:04:23 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:17:06 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:17:11 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:17:35 - DEBUG - req.body | {"title":"Bug 1754412828637","severity":5,"description":"Problem loading file.","labels":[],"_id":"rEmo01","createdAt":1754412829094}
+6.8.2025, 9:17:44 - DEBUG - req.body | {"title":"Bug 1754412827713","severity":1,"description":"What did the bug cause","labels":[],"_id":"ibDXCg","createdAt":1754412828294}
+6.8.2025, 9:18:53 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:19:04 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:19:05 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:19:17 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:19:19 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:19:47 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:19:49 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:20:04 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:20:15 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:20:16 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:20:46 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:20:48 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:22:44 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:22:53 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:23:08 - DEBUG - req.body | {"title":"Bug 1754412829438","severity":3,"description":"What did the bug cause","labels":[],"_id":"dBQybn","createdAt":1754412830066}
+6.8.2025, 9:23:14 - DEBUG - req.body | {"title":"Bug 1754412829438","severity":3,"description":"What did the bug cause","labels":[],"_id":"dBQybn","createdAt":1754412830066}
+6.8.2025, 9:23:20 - DEBUG - req.body | {"title":"Bug 1754412829438","severity":2,"_id":"dBQybn","description":"dddd","labels":[]}
+6.8.2025, 9:23:54 - DEBUG - req.body | {"title":"Bug 1754412828637","severity":5,"description":"Problem loading file.","labels":[],"_id":"rEmo01","createdAt":1754412829094}
+6.8.2025, 9:24:14 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:24:19 - DEBUG - req.body | {"title":"Bug 1754412828637","severity":5,"description":"Problem loading file.","labels":[],"_id":"rEmo01","createdAt":1754412829094}
+6.8.2025, 9:24:49 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:24:53 - DEBUG - req.body | {"title":"Bug 1754412828637","severity":5,"description":"Problem loading file.","labels":[],"_id":"rEmo01","createdAt":1754412829094}
+6.8.2025, 9:25:05 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:25:10 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:26:14 - DEBUG - req.body | 
+6.8.2025, 9:26:19 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:26:53 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:27:13 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:27:14 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:27:29 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:27:31 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:27:44 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:27:46 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:27:53 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:27:56 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:27:58 - DEBUG - req.body | {"title":"No Title","severity":50,"_id":"hE2B1u","label":"yami","createdAt":1754229876101}
+6.8.2025, 9:28:21 - DEBUG - req.body | {"title":"Bug 1754412827713","severity":6,"description":"What did the bug cause","labels":[],"_id":"ibDXCg","createdAt":1754412828294}
+6.8.2025, 9:28:35 - DEBUG - req.body | {"title":"Bug 1754412828637","severity":5,"description":"Problem loading file.","labels":["need-CR"],"_id":"rEmo01","createdAt":1754412829094}
+6.8.2025, 9:28:50 - DEBUG - req.body | {"title":"Bug 1754412828637","severity":100,"description":"Problem loading file.","labels":["need-CR"],"_id":"rEmo01","createdAt":1754412829094}
+6.8.2025, 9:29:00 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:30:17 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:32:37 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:33:00 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:33:40 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:34:29 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:34:59 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:35:09 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:35:43 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:36:15 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:37:30 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:37:42 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:38:10 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:38:17 - DEBUG - req.body | {"title":"Checkout page stuck at loading spinner","severity":8,"description":"Customers cannot complete purchases due to endless loading.","labels":["critical"],"_id":"mF29lp","createdAt":1754610003000}
+6.8.2025, 9:38:21 - DEBUG - req.body | {"title":"Bug 1754462299602","severity":3,"description":"What did the bug cause"}
+6.8.2025, 9:40:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:40:44 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:43:05 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:43:42 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:44:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:45:12 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:45:32 - DEBUG - req.body | {"title":"Profile picture not saving","severity":2,"description":"Uploading a new profile picture shows success but reverts after refresh.","labels":[],"_id":"pG73js","createdAt":1754610002000}
+6.8.2025, 9:45:33 - DEBUG - req.body | {"title":"Login button unresponsive on mobile","severity":4,"description":"Clicking the login button on small screens does nothing.","labels":["UI"],"_id":"hY82kd","createdAt":1754610001000}
+6.8.2025, 9:45:33 - DEBUG - req.body | {"title":"Login button unresponsive on mobile","severity":4,"description":"Clicking the login button on small screens does nothing.","labels":[],"_id":"hY82kd","createdAt":1754610001000}
+6.8.2025, 9:45:34 - DEBUG - req.body | {"title":"Email notifications sent twice","severity":5,"description":"Each event triggers two identical email alerts to the same user.","labels":[],"_id":"aQ81zn","createdAt":1754610004000}
+6.8.2025, 9:45:35 - DEBUG - req.body | {"title":"Reports exporting in wrong date format","severity":6,"description":"Exported CSV files show dates in US format instead of selected locale.","labels":[],"_id":"cD65qw","createdAt":1754610006000}
+6.8.2025, 9:45:36 - DEBUG - req.body | {"title":"Search results not updating after filter","severity":3,"description":"Changing the filter shows old results until the page is refreshed.","labels":[],"_id":"kL47bv","createdAt":1754610005000}
+6.8.2025, 9:45:38 - DEBUG - req.body | {"title":"Email notifications sent twice","severity":5,"description":"Each event triggers two identical email alerts to the same user.","labels":["need-CR"],"_id":"aQ81zn","createdAt":1754610004000}
+6.8.2025, 9:45:39 - DEBUG - req.body | {"title":"Bug 1754462299602","severity":3,"description":"What did the bug cause","labels":["critical"],"_id":"fdLqH1","createdAt":1754462301253}
+6.8.2025, 9:47:08 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:47:43 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:47:48 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:47:54 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:47:57 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:48:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:48:04 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:48:08 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:48:13 - DEBUG - req.body | {"title":"Profile picture not saving","severity":2,"description":"Uploading a new profile picture shows success but reverts after refresh.","labels":["dev-branch","critical"],"_id":"pG73js","createdAt":1754610002000}
+6.8.2025, 9:48:14 - DEBUG - req.body | {"title":"Profile picture not saving","severity":2,"description":"Uploading a new profile picture shows success but reverts after refresh.","labels":["critical"],"_id":"pG73js","createdAt":1754610002000}
+6.8.2025, 9:48:20 - DEBUG - req.body | {"title":"Profile picture not saving","severity":100,"description":"cccccccccccc","labels":["critical"],"_id":"pG73js","createdAt":1754610002000}
+6.8.2025, 9:49:33 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:50:12 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:51:38 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:52:13 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:53:10 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:53:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:54:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:57:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:58:14 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:58:56 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 9:59:52 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:00:15 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:00:24 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:00:39 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:00:56 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:01:05 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:01:11 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:01:24 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:01:47 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:02:07 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:02:20 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:02:27 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:02:57 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:03:54 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:04:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:04:22 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:06:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:06:35 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:07:53 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:08:12 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:09:06 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:09:34 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:11:02 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:11:16 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:11:28 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:11:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:12:55 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:13:57 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:14:44 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:15:19 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:16:24 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:16:34 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:16:48 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:16:55 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:17:00 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:20:48 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:21:20 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:21:33 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:22:48 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:23:25 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:24:39 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:25:20 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:25:42 - DEBUG - req.body | {"title":"Email notifications sent twice","severity":1000,"description":"c","labels":["need-CR"],"_id":"aQ81zn","createdAt":1754610004000}
+6.8.2025, 10:25:54 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:26:03 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:26:07 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:29:02 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:29:20 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:29:32 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:30:24 - DEBUG - req.body | {"title":"Reports exporting in wrong date format","severity":3333,"description":"Exported CSV files show dates in US format instead of selected locale.","labels":["critical"],"_id":"cD65qw","createdAt":1754610006000}
+6.8.2025, 10:30:28 - DEBUG - req.body | {"title":"Reports exporting in wrong date format","severity":3333,"_id":"cD65qw","description":"Exported CSV files show dates in US format instead of selected locale.","labels":["critical","dev-branch"]}
+6.8.2025, 10:30:29 - DEBUG - req.body | {"title":"Reports exporting in wrong date format","severity":3333,"_id":"cD65qw","description":"Exported CSV files show dates in US format instead of selected locale.","labels":["critical"]}
+6.8.2025, 10:30:31 - DEBUG - req.body | {"title":"Reports exporting in wrong date format","severity":3333,"_id":"cD65qw","description":"Exported CSV files show dates in US format instead of selected locale.","labels":["critical","need-CR"]}
+6.8.2025, 10:59:28 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 10:59:39 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:12:57 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:13:21 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:13:44 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:14:20 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:20:41 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:23:03 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:28:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:55:27 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:56:19 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:57:29 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 11:57:42 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:05:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:06:09 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:06:36 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:06:49 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:08:42 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:09:30 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:09:58 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:10:00 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:28:56 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:29:18 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:29:34 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:29:54 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:29:59 - ERROR - TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function onCreatePdf
+6.8.2025, 12:30:35 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:31:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:31:23 - ERROR - TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function onCreatePdf
+6.8.2025, 12:31:58 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:32:02 - ERROR - TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function onCreatePdf
+6.8.2025, 12:32:40 - ERROR - TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function onCreatePdf
+6.8.2025, 12:33:26 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:33:39 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:34:13 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:35:42 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:35:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:36:29 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:36:31 - ERROR - TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function onCreatePdf
+6.8.2025, 12:37:07 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:38:08 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:38:55 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:40:23 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:40:35 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:43:49 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:44:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:44:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:44:36 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:47:13 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:49:23 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:50:19 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:50:37 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:51:44 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:51:47 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:52:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:52:54 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:53:03 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:54:05 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:56:16 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:56:46 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:57:08 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:57:24 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:57:46 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:58:08 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:58:44 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:58:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:58:59 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 12:59:10 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:00:02 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:01:06 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:01:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:03:21 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:04:17 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:04:38 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:05:59 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:06:25 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:07:12 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:07:20 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:07:34 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:07:49 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:08:10 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:08:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:09:00 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:09:35 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:10:03 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:10:25 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:10:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:10:42 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:10:48 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:11:03 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:13:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:13:37 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:14:56 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:16:00 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:16:21 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:16:23 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:16:38 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:16:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:18:33 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:19:23 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:19:37 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:19:47 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:22:42 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:24:24 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:25:54 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:26:48 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:27:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:28:03 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:28:17 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:31:02 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:31:11 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:33:22 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:37:11 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:40:55 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:45:39 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:45:47 - ERROR - TypeError: Cannot read properties of undefined (reading 'download')
+6.8.2025, 13:48:36 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:48:41 - ERROR - TypeError: Cannot read properties of undefined (reading 'download')
+6.8.2025, 13:55:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 13:55:37 - ERROR - TypeError: Cannot read properties of undefined (reading 'download')
+6.8.2025, 13:56:06 - ERROR - TypeError: Cannot read properties of undefined (reading 'download')
+6.8.2025, 13:58:57 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:12:01 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:12:04 - ERROR - TypeError: Cannot read properties of undefined (reading 'download')
+6.8.2025, 14:12:10 - ERROR - TypeError: Cannot read properties of undefined (reading 'download')
+6.8.2025, 14:13:18 - ERROR - TypeError: Cannot read properties of undefined (reading 'download')
+6.8.2025, 14:13:43 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:13:59 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:15:39 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:16:18 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:16:47 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:18:08 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:20:33 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:22:29 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 14:23:00 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:17:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:20:30 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:20:56 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:21:05 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:21:27 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:21:31 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:21:57 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:23:59 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:36:43 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:39:48 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:40:03 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:55:09 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:56:25 - INFO - Server listening on port http://127.0.0.1:3030/
+6.8.2025, 15:59:13 - INFO - Server listening on port http://127.0.0.1:3030/

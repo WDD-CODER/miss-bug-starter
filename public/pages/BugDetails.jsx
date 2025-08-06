@@ -11,7 +11,7 @@ export function BugDetails() {
 
     useEffect(() => {
         bugService.getById(bugId)
-            .then(bug => setBug(bug))
+        .then(bug => setBug(bug))
             .catch(err => showErrorMsg(`Cannot load bug`, err))
     }, [])
     

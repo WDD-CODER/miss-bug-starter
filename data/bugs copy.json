@@ -1,39 +1,50 @@
 [
-  {
-    "title": "no title",
-    "severity": null,
-    "_id": "aJ3O4n",
-    "label": "",
-    "createdAt": 1754227422741
-  },
-  {
-    "title": "Bug 1754225773354",
-    "severity": 3,
-    "_id": "jFB2jc",
-    "description": "What did the bug cause",
-    "label": "",
-    "createdAt": 1754225776585
-  },
-  {
-    "title": "Bug 1754225228131",
-    "severity": 3,
-    "_id": "JCN7WP",
-    "description": "What did the bug cause",
-    "label": "",
-    "createdAt": 1754225230146
-  },
-  {
-    "title": "Login crash on timeout",
-    "severity": 3,
-    "_id": "STtxY6",
-    "description": "User is logged out abruptly after 2 minutes",
-    "createdAt": 1754155538440
-  },
-  {
-    "title": "null",
-    "severity": 5,
-    "_id": "2vW5T9",
-    "createdAt": 1754155638036,
-    "label": ""
-  }
+    {
+        "title": "Login button unresponsive on mobile",
+        "severity": 4,
+        "description": "Clicking the login button on small screens does nothing.",
+        "labels": ["critical"],
+        "_id": "hY82kd",
+        "createdAt": 1754610001000
+    },
+    {
+        "title": "Profile picture not saving",
+        "severity": 2,
+        "description": "Uploading a new profile picture shows success but reverts after refresh.",
+        "labels": ["dev-branch"],
+        "_id": "pG73js",
+        "createdAt": 1754610002000
+    },
+    {
+        "title": "Checkout page stuck at loading spinner",
+        "severity": 8,
+        "description": "Customers cannot complete purchases due to endless loading.",
+        "labels": ["critical", "need-CR"],
+        "_id": "mF29lp",
+        "createdAt": 1754610003000
+    },
+    {
+        "title": "Email notifications sent twice",
+        "severity": 5,
+        "description": "Each event triggers two identical email alerts to the same user.",
+        "labels": ["need-CR"],
+        "_id": "aQ81zn",
+        "createdAt": 1754610004000
+    },
+    {
+        "title": "Search results not updating after filter",
+        "severity": 3,
+        "description": "Changing the filter shows old results until the page is refreshed.",
+        "labels": ["dev-branch"],
+        "_id": "kL47bv",
+        "createdAt": 1754610005000
+    },
+    {
+        "title": "Reports exporting in wrong date format",
+        "severity": 6,
+        "description": "Exported CSV files show dates in US format instead of selected locale.",
+        "labels": ["critical"],
+        "_id": "cD65qw",
+        "createdAt": 1754610006000
+    }
 ]
