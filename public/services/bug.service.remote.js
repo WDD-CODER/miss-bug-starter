@@ -1,4 +1,4 @@
-const BASE_URL = '/api/bug'
+const BASE_URL = '/api/bug/'
 const COOKIE_URL = '/cookie'
 
 export const bugService = {
@@ -9,6 +9,7 @@ export const bugService = {
     getDefaultFilter,
     getVisitedBugs,
     resetCookie,
+    onDownloadPDF,
 }
 
 function query(filterBy) {
@@ -16,13 +17,19 @@ function query(filterBy) {
         .then(res => res.data)
 }
 
+function onDownloadPDF(filterBy) {    
+    return axios.get('file/pdf', { params: filterBy })
+        .then(res => res.data)
+
+}
+
 function getById(bugId) {
-    return axios.get(`${BASE_URL}/${bugId}`)
+    return axios.get(BASE_URL + bugId)
         .then(res => res.data)
 }
 
 function remove(bugId) {
-    return axios.delete(`${BASE_URL}/${bugId}/remove`)
+    return axios.delete(BASE_URL + bugId)
         .then(res => res.data)
 }
 
@@ -35,7 +42,7 @@ function save(bug) {
 }
 
 function getDefaultFilter() {
-    return { txt: '', minSeverity: 0, sortby:'',sortDir: 1 }
+    return { txt: '', minSeverity: 0, sortby: 'title', sortDir: 1 }
 }
 
 function getVisitedBugs() {

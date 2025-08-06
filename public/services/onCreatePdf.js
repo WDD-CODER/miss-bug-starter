@@ -4,15 +4,16 @@ import PDFDocument from 'pdfkit-table'
 
 export function onCreatePdf(data) {
     return new Promise((resolve, reject) => {
+        const filePath = './public/bugs.pdf'
         let doc = new PDFDocument({ margin: 15, size: 'A4' })
-        const stream = fs.createWriteStream('./bugs.pdf')
+        const stream = fs.createWriteStream(filePath)
         doc.pipe(stream)
 
         _createPdf(doc, data)
             .then(() => doc.end())
             .catch(reject)
 
-        stream.on('finish', () => resolve())
+        stream.on('finish', () => resolve(filePath))
         stream.on('error', reject)
     })
 }

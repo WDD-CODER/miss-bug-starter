@@ -5,28 +5,43 @@ import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
 
+
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
+    const [sumOfBugs, setSumOfBugs] = useState()
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
     const [visitedBugs, setVisitedBugs] = useState()
-
     useEffect(loadBugs, [filterBy])
     useEffect(onSetVisitedBugs, [])
+    useEffect(() => {
+
+        if (sumOfBugs === 0) {
+            setFilterBy(prevFilter => {
+                prevFilter.pageIdx = 0
+                return { ...prevFilter, ...filterBy }
+            })
+        }
+    }, [sumOfBugs])
+
+    useEffect(() => {
+        if (bugs) bugService.onDownloadPDF(filterBy)
+    }, [bugs])
+
 
     function loadBugs() {
         bugService.query(filterBy)
-            .then(setBugs)
+            .then(res => {
+                setSumOfBugs(res.length)
+                return setBugs(res)
+            })
             .catch(err => showErrorMsg(`Couldn't load bugs - ${err}`))
-    }
-
-    function onDownloadPDF() {
-        window.open('/api/bug/pdf')
     }
 
     function onRemoveBug(bugId) {
         bugService.remove(bugId)
             .then(() => {
                 const bugsToUpdate = bugs.filter(bug => bug._id !== bugId)
+                setSumOfBugs(bugsToUpdate.length)
                 setBugs(bugsToUpdate)
                 showSuccessMsg('Bug removed')
             })
@@ -43,6 +58,7 @@ export function BugIndex() {
         bugService.save(bug)
             .then(savedBug => {
                 setBugs([...bugs, savedBug])
+                setSumOfBugs(bugs.length + 1)
                 showSuccessMsg('Bug added')
             })
             .catch(err => showErrorMsg(`Cannot add bug`, err))
@@ -64,8 +80,10 @@ export function BugIndex() {
     }
 
     function onSetFilterBy(filterBy) {
-        
-        setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
+        setFilterBy(prevFilter => {
+            if (filterBy.pageIdx !== undefined) prevFilter.pageIdx = 0
+            return { ...prevFilter, ...filterBy }
+        })
     }
 
     function onResetCookie() {
@@ -109,15 +127,45 @@ export function BugIndex() {
             .catch(err => showErrorMsg(' Failed fetching bugs from Server'))
     }
 
+    function togglePagination() {
+        setFilterBy(prevFilter => {
+            return {
+                ...prevFilter,
+                pageIdx: (prevFilter.pageIdx === undefined) ? 0 : undefined
+            }
+        })
+    }
+
+    function onChangePage(diff) {
+        if (filterBy.pageIdx === undefined) return
+        setFilterBy(prevFilter => {
+            let nextPage = prevFilter.pageIdx + diff
+            if (nextPage < 0) nextPage = 0
+            return { ...prevFilter, pageIdx: nextPage }
+        })
+
+    }
+
     const sumOfVisitedBugs = visitedBugs ? visitedBugs.length : 0
 
     return <section className="bug-index main-content">
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
+            <a href={`/bugs.pdf`} download>Download file</a>
+            {/* { The first solution I found was using the function onDownloadPDF. Later I came to the
+             sense that maybe using the A tag would be a better practice But it made me Create The
+              document every time, so it will be ready for the egg tag to pass it on} */}
+            {/* <button onClick={() => bugService.onDownloadPDF(filterBy)}>Download PDF</button> */}
             <button onClick={onResetCookie}>{sumOfVisitedBugs}</button>
-            <button onClick={onDownloadPDF}>Download PDF</button>
             <button onClick={onAddBug}>Add Bug</button>
+            <section>
+                <button onClick={togglePagination}>Toggle Pagination</button>
+                <button onClick={() => onChangePage(-1)}>-</button>
+                <span>{(filterBy.pageIdx === undefined) ? 'No pagination' : ' pagination'}</span>
+                <button onClick={() => onChangePage(1)}>+</button>
+
+            </section>
         </header>
 
         <BugList

@@ -13,16 +13,16 @@ app.use(cookieParser())
 app.use(express.json())
 
 app.get('/api/bug', (req, res) => {
-    
     const filter = {
         txt: req.query.txt || '',
         minSeverity: +req.query.minSeverity || 0,
-        label:req.query.label || ''
+        label: req.query.label || '',
+        pageIdx: req.query.pageIdx
     }
 
     const sort = {
-        sortBy: req.query.sortBy || '',
-        sortDir:req.query.sortDir || 1
+        sortBy: req.query.sortBy || 'title',
+        sortDir: req.query.sortDir || 1
     }
 
     bugService.query(filter, sort)
@@ -32,6 +32,8 @@ app.get('/api/bug', (req, res) => {
             res.status(500).send(err)
         })
 })
+
+
 
 app.post('/api/bug', (req, res) => {
     loggerService.debug('req.body', req.body)
@@ -90,7 +92,7 @@ app.get('/api/bug/:bugId', (req, res) => {
         })
 })
 
-app.delete('/api/bug/:bugId', (req, res) => {    
+app.delete('/api/bug/:bugId', (req, res) => {
     const bugId = req.params.bugId
     bugService.remove(bugId)
         .then(() => res.send(`bug ${bugId} removed`))
@@ -111,10 +113,28 @@ app.get('/cookie', (req, res) => {
 })
 
 
-// app.get('/file/pdf', (req, res) => {
-//     const visitedBugs = req.cookies.visitedBugs
-//     res.send(visitedBugs)
-// })
+
+app.get('/file/pdf', (req, res) => {
+    const filter = {
+        txt: req.query.txt || '',
+        minSeverity: +req.query.minSeverity || 0,
+        label: req.query.label || '',
+        pageIdx: req.query.pageIdx
+    }
+
+    const sort = {
+        sortBy: req.query.sortBy || 'title',
+        sortDir: req.query.sortDir || 1
+    }
+
+    bugService.query(filter, sort)
+        .then(onCreatePdf)
+        .then(filePath => res.download(filePath, 'bugs.pdf'))
+        .catch(err => {
+            loggerService.error(err)
+            res.status(500).send(err)
+        })
+})
 
 
 app.get('*all', (req, res) => {
