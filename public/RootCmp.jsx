@@ -8,15 +8,24 @@ import { Home } from './pages/Home.jsx'
 import { BugIndex } from './pages/BugIndex.jsx'
 import { BugDetails } from './pages/BugDetails.jsx'
 import { AboutUs } from './pages/AboutUs.jsx'
+import { authService } from './services/auth.service.local.js'
+import { LoginSignup } from './pages/LoginSignup.jsx'
+
+const { useState } = React
+// console.log("authService:", authService)
 
 export function App() {
+    const [LoggedinUser, setLoggedinUser] = useState(authService.getLoggedinUser())
+
+
     return <Router>
         <div className="app-wrapper">
             <UserMsg />
-            <AppHeader />
+            <AppHeader LoggedinUser={LoggedinUser} setLoggedinUser={setLoggedinUser}  />
             <main className="container">
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/auth" element={<LoginSignup />} />
                     <Route path="/bug" element={<BugIndex />} />
                     <Route path="/bug/:bugId" element={<BugDetails />} />
                     <Route path="/about" element={<AboutUs />} />
