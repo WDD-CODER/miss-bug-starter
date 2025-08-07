@@ -27,12 +27,3 @@ export function writeJsonFile(path, json) {
     })
 }
 
-// export function getTruthyValues(obj) {
-//     const newObj = {}
-//     for (const key in obj) {
-//         if (obj[key]) newObj[key] = obj[key]
-//     }
-//     return Object.entries(newObj)
-//         .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
-//         .join('&')
-// }
