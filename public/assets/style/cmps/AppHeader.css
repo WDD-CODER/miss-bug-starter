@@ -4,7 +4,7 @@
     color: whitesmoke;
 }
 
-.app-header > * {
+.app-header>* {
     align-items: center;
     grid-row: 1;
 }
@@ -32,4 +32,12 @@
 .app-header nav a.active {
     color: var(--color3);
     border-block-end: 1px solid var(--color3);
+}
+
+.app-header .logged-user {
+    display: flex;
+    place-items: center;
+    border-radius: 1vh;
+    background-color: orange;
+    padding: 0.3em;
 }

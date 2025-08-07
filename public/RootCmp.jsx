@@ -16,7 +16,6 @@ const { useState } = React
 
 export function App() {
     const [loggedinUser, setLoggedinUser] = useState(authService.getLoggedinUser())
-    console.log("🚀 ~ App ~ setLoggedinUser:", setLoggedinUser)
 
 
     return <Router>
@@ -26,7 +25,7 @@ export function App() {
             <main className="container">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/auth" element={<LoginSignup />} />
+                    <Route path="/auth" element={<LoginSignup setLoggedinUser={setLoggedinUser} />} />
                     <Route path="/bug" element={<BugIndex />} />
                     <Route path="/bug/:bugId" element={<BugDetails />} />
                     <Route path="/about" element={<AboutUs />} />

@@ -1,5 +1,5 @@
 import { authService } from "../services/auth.service.local.js"
-import { showSuccessMsg } from "../services/event-bus.service.js"
+import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
 import { userService } from "../services/user.service.local.js"
 
 const { useState } = React
@@ -10,6 +10,7 @@ export function LoginSignup({ setLoggedinUser }) {
 
     const [isSignUp, setIsSignUp] = useState(false)
     const [credentials, setCredentials] = useState(userService.getEmptyCredentials())
+    
     const navigate = useNavigate()
 
     function handleChange({ target }) {
@@ -38,7 +39,7 @@ export function LoginSignup({ setLoggedinUser }) {
 
     function signup() {
         authService.signup(credentials)
-            .then(() => {
+            .then(user => {
                 setLoggedinUser(user)
                 showSuccessMsg(` Signed up with success`)
                 navigate('/')
