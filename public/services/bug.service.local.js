@@ -68,7 +68,7 @@ function getById(bugId) {
 }
 
 function remove(bugId) {
-    return storageService.delete(BAG_KEY, bugId)
+    return storageService.remove(BAG_KEY, bugId)
         .then(res => res)
 }
 
