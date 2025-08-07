@@ -31,8 +31,6 @@ export function BugIndex() {
     function loadBugs() {
         bugService.query(filterBy)
         .then(res => {
-                console.log("🚀 ~ loadBugs ~ filterBy:", filterBy)
-                console.log("🚀 ~ loadBugs ~ res:", res)
                 setSumOfBugs(res.length)
                 return setBugs(res)
             })

@@ -1,7 +1,7 @@
 import { storageService } from 'async-storage.service.js'
 import { loadFromStorage, saveToStorage } from './util.service.js'
 
-const BAG_KEY = 'bugs'
+const BAG_KEY = 'bugs_DB'
 const COOKIE_KEY = '/cookie'
 const PAGE_SIZE = 3
 
@@ -22,7 +22,6 @@ function query(filter) {
 
     return storageService.query(BAG_KEY)
         .then(bugs => {
-            console.log("🚀 ~ query ~ bugs:", bugs)
             let bugsForDisplay = [...bugs]
 
             if (filter.txt) {
@@ -75,10 +74,10 @@ function remove(bugId) {
 function save(bug) {
     if (bug._id) {
         return storageService.put(BAG_KEY, bug)
-        .then(res => res).catch(console.error)
+            .then(res => res).catch(console.error)
     } else {
         return storageService.post(BAG_KEY, bug)
-        .then(res => res).catch(console.error)
+            .then(res => res).catch(console.error)
     }
 }
 
@@ -127,7 +126,12 @@ function _createBugs() {
             _id: "C0FF33",
             description: '',
             labels: [],
-            createdAt: Date.now() + 2
+            createdAt: Date.now() + 2,
+            creator: {
+                _id: 'u101',
+                fullname: 'Puki Ja'
+            }
+
         },
         {
             title: "Unexpected Response",
