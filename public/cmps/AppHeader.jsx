@@ -3,8 +3,7 @@ import { showErrorMsg } from "../services/event-bus.service.js"
 
 const { NavLink, Link } = ReactRouterDOM
 
-export function AppHeader(loggedInUser, setLoggedinUser) {
-
+export function AppHeader({loggedInUser, setLoggedinUser}) {
    function onLogout() {
         authService.logout()
             .then(()=> {
