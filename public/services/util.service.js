@@ -1,5 +1,3 @@
-// import http from 'http'
-// import https from 'https'
 
 
 export function makeLorem(size = 100) {
@@ -45,6 +43,7 @@ export function download(url, fileName) {
 }
 
 
+
 export function httpGet(url) {
     const protocol = url.startsWith('https') ? https : http
     const options = {
@@ -69,3 +68,19 @@ export function httpGet(url) {
     })
 }
 
+export function createBugs(count = 1) {
+    const bugs = []
+    for (let i = 0; i < count; i++) {
+        bugs.push(getEmptyBug())
+    }
+    return bugs
+}
+
+export function getEmptyBug() {
+    return {
+        title: '',
+        severity: 1,
+        description: '',
+        labels: [],
+    }
+}

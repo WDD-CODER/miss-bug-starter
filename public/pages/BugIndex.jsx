@@ -1,6 +1,6 @@
 const { useState, useEffect } = React
 
-import { bugService } from '../services/bug.service.remote.js'
+import { bugService } from '../services/bug.service.local.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
@@ -12,7 +12,7 @@ export function BugIndex() {
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
     const [visitedBugs, setVisitedBugs] = useState()
     useEffect(loadBugs, [filterBy])
-    useEffect(onSetVisitedBugs, [])
+    // useEffect(onSetVisitedBugs, [])
     useEffect(() => {
 
         if (sumOfBugs === 0) {
@@ -23,14 +23,16 @@ export function BugIndex() {
         }
     }, [sumOfBugs])
 
-    useEffect(() => {
-        if (bugs) bugService.onDownloadPDF(filterBy)
-    }, [bugs])
+    // useEffect(() => {
+    //     if (bugs) bugService.onDownloadPDF(filterBy)
+    // }, [bugs])
 
 
     function loadBugs() {
         bugService.query(filterBy)
-            .then(res => {
+        .then(res => {
+                console.log("🚀 ~ loadBugs ~ filterBy:", filterBy)
+                console.log("🚀 ~ loadBugs ~ res:", res)
                 setSumOfBugs(res.length)
                 return setBugs(res)
             })
@@ -52,7 +54,9 @@ export function BugIndex() {
         const bug = {
             title: prompt('Bug title?', 'Bug ' + Date.now()),
             severity: +prompt('Bug severity?', 3),
-            description: prompt('What Happened?', 'What did the bug cause')
+            description: prompt('What Happened?', 'What did the bug cause'),
+            createdAt: Date.now(),
+            labels:[]
         }
 
         bugService.save(bug)
@@ -121,11 +125,11 @@ export function BugIndex() {
             .catch(err => showErrorMsg('problem removing bug label', err))
     }
 
-    function onSetVisitedBugs() {
-        bugService.getVisitedBugs()
-            .then(res => setVisitedBugs(res))
-            .catch(err => showErrorMsg(' Failed fetching bugs from Server'))
-    }
+    // function onSetVisitedBugs() {
+    //     bugService.getVisitedBugs()
+    //         .then(res => setVisitedBugs(res))
+    //         .catch(err => showErrorMsg(' Failed fetching bugs from Server'))
+    // }
 
     function togglePagination() {
         setFilterBy(prevFilter => {
