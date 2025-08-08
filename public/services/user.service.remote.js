@@ -11,15 +11,15 @@ export const userService = {
 const BASE_URL = '/'
 
 function query() {
-    return storageService.query(KEY)
+    return axios.get(KEY)
 }
 
 function getById(userId) {
-    return storageService.get(KEY, userId)
+    return axios.get(KEY, userId)
 }
 
 function getByUsername(username) {
-    return storageService.query(KEY)
+    return axios.get(KEY, username)
         .then(users => users.find(user => user.username === username))
 }
 
@@ -31,7 +31,7 @@ function add(user) {
         .then(existingUser => {
             if (existingUser) return Promise.reject('Username taken')
 
-            return storageService.post(KEY, user)
+            return axios.post(KEY, user)
                 .then(user => {
                     delete user.password
                     return user

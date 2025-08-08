@@ -8,7 +8,7 @@ import { Home } from './pages/Home.jsx'
 import { BugIndex } from './pages/BugIndex.jsx'
 import { BugDetails } from './pages/BugDetails.jsx'
 import { AboutUs } from './pages/AboutUs.jsx'
-import { authService } from './services/auth.service.local.js'
+import { authService } from './services/auth.service.remote.js'
 import { LoginSignup } from './pages/LoginSignup.jsx'
 
 const { useState } = React

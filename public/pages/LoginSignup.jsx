@@ -1,6 +1,6 @@
-import { authService } from "../services/auth.service.local.js"
+import { authService } from "../services/auth.service.remote.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
-import { userService } from "../services/user.service.local.js"
+import { userService } from "../services/user.service.remote.js"
 
 const { useState } = React
 const { useNavigate } = ReactRouter

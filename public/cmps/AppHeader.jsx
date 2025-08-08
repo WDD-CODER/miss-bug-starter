@@ -1,4 +1,4 @@
-import { authService } from "../services/auth.service.local.js"
+import { authService } from "../services/auth.service.remote.js"
 import { showErrorMsg } from "../services/event-bus.service.js"
 
 const { NavLink, Link, useNavigate } = ReactRouterDOM
