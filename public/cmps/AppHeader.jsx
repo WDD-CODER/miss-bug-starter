@@ -7,7 +7,6 @@ export function AppHeader({loggedinUser, setLoggedinUser}) {
     
     const navigate = useNavigate()
     
-    
    function onLogout() {
         authService.logout()
             .then(()=> {
@@ -19,7 +18,6 @@ export function AppHeader({loggedinUser, setLoggedinUser}) {
                 showErrorMsg(`Couldn't logout`)
             })
     }
-                    console.log("🚀 ~ AppHeader ~ loggedinUser:", loggedinUser)
 
     return <header className="app-header main-content single-row">
         <h1>Miss Bug</h1>

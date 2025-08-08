@@ -1,75 +1,26 @@
 [
     {
-        "title": "Bug 1754548275445",
-        "severity": 3,
-        "description": "What did the bug cause",
-        "labels": [],
-        "_id": "q8kUAX",
-        "createdAt": 1754548279105,
-        "creator": {
-            "_id": "u101",
-            "fullname": "Puki Ja"
-        }
+        "username": "d",
+        "fullname": "d w",
+        "isAdmin": false,
+        "_id": "gcmlXQ"
     },
     {
-        "title": "Login button unresponsive on mobile",
-        "severity": 4,
-        "description": "Clicking the login button on small screens does nothing.",
-        "labels": [
-            "critical"
-        ],
-        "_id": "hY82kd",
-        "createdAt": 1754610001000
+        "_id": "u1a3b7",
+        "username": "Alice",
+        "fullname": "Alice Smith",
+        "isAdmin": true
     },
     {
-        "title": "Profile picture not saving",
-        "severity": 2,
-        "description": "Uploading a new profile picture shows success but reverts after refresh.",
-        "labels": [
-            "dev-branch"
-        ],
-        "_id": "pG73js",
-        "createdAt": 1754610002000
+        "_id": "v9k4m2",
+        "username": "Bob",
+        "fullname": "Bob Johnson",
+        "isAdmin": false
     },
     {
-        "title": "Checkout page stuck at loading spinner",
-        "severity": 8,
-        "description": "Customers cannot complete purchases due to endless loading.",
-        "labels": [
-            "critical",
-            "need-CR"
-        ],
-        "_id": "mF29lp",
-        "createdAt": 1754610003000
-    },
-    {
-        "title": "Email notifications sent twice",
-        "severity": 5,
-        "description": "Each event triggers two identical email alerts to the same user.",
-        "labels": [
-            "need-CR"
-        ],
-        "_id": "aQ81zn",
-        "createdAt": 1754610004000
-    },
-    {
-        "title": "Search results not updating after filter",
-        "severity": 3,
-        "description": "Changing the filter shows old results until the page is refreshed.",
-        "labels": [
-            "dev-branch"
-        ],
-        "_id": "kL47bv",
-        "createdAt": 1754610005000
-    },
-    {
-        "title": "Reports exporting in wrong date format",
-        "severity": 6,
-        "description": "Exported CSV files show dates in US format instead of selected locale.",
-        "labels": [
-            "critical"
-        ],
-        "_id": "cD65qw",
-        "createdAt": 1754610006000
+        "_id": "x8p6q1",
+        "username": "Charlie",
+        "fullname": "Charlie Brown",
+        "isAdmin": true
     }
 ]

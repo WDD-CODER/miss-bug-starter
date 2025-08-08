@@ -1,4 +1,4 @@
-import { storageService } from './async-storage.service.js'
+
 
 export const userService = {
     query,
@@ -8,7 +8,7 @@ export const userService = {
     getEmptyCredentials,
 }
 
-const KEY = 'userDB'
+const BASE_URL = '/'
 
 function query() {
     return storageService.query(KEY)
