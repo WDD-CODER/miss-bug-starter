@@ -137,35 +137,35 @@ app.get('/file/pdf', (req, res) => {
         })
 })
 
-/////////////////////////////////////////////////////////
-
+// USER API
 app.get('/api/user', (req, res) => {
     console.log('/api/user')
 
     userService.query()
         .then(users => res.send(users))
         .catch(err => {
-            console.log('err', err)
+            loggerService.error('Cannot load users', err)
             res.status(400).send("Couldn't get users")
         })
 })
 
 
-app.get('/api/user/:username', (req, res) => {
-    const { username } = req.params
-    // let visitedBugs = req.cookies.visitedBugs || []
+app.get('/api/user/:userId', (req, res) => {
+    const { userId } = req.params
 
-    userService.getByUsername(username)
+    userService.getById(userId)
         .then(user => res.send(user))
         .catch(err => {
-            loggerService.error(`Couldn't find user ${username}`)
+            loggerService.error(`Couldn't find user ${userId}`)
             res.status(400).send(err)
         })
 })
 
 app.post('/api/user', (req, res) => {
     loggerService.debug('req.body', req.body)
+
     const { fullname, username, isAdmin } = req.body
+
     const user = {
         username,
         fullname,
@@ -175,41 +175,21 @@ app.post('/api/user', (req, res) => {
     userService.add(user)
         .then(user => res.send(user))
         .catch(err => {
-            loggerService.error(`Couldn't add user ${user}`)
+            loggerService.error(`Couldn't add user ${username}`)
             res.status(400).send(err)
         })
 })
 
-app.put('/api/user', (req, res) => {
-    loggerService.debug('req.body', req.body)
-    const { _id, fullname, username, isAdmin } = req.body
-    const user = {
-        _id,
-        username,
-        fullname,
-        isAdmin
-    }
 
-    userService.add(user)
-        .then(user => res.send(user))
-        .catch(err => {
-            loggerService.error(`Couldn't update user ${user}`)
-            res.status(400).send(err)
-        })
-})
-
-app.delete('/api/user/:username', (req, res) => {
-    const username = req.params.username
-    console.log("🚀 ~ username:", username)
-    userService.remove(username)
-        .then(() => res.send(`user ${username} removed`))
+app.delete('/api/user/:userId', (req, res) => {
+    const userId = req.params.userId
+    userService.remove(userId)
+        .then(() => res.send(`user ${userId} removed`))
         .catch(err => {
             loggerService.error(err)
-            res.status(400).send("Couldn't find username to remove")
+            res.status(400).send("Couldn't find userId to remove")
         })
 })
-
-
 
 /////////////////////////////////////////////////////////
 
