@@ -12,12 +12,12 @@ export const userService = {
 
 
 function query() {
-	const usersToReturn = users.map(user => ({ _id: user._id, fullname: user.fullname }))
-	return Promise.resolve(usersToReturn)
+    const usersToReturn = users.map(user => ({ _id: user._id, fullname: user.fullname }))
+    return Promise.resolve(usersToReturn)
 }
 
 function getById(userId) {
-    const user = users.find(user => user._id === userId)
+    var user = users.find(user => user._id === userId)
     if (!user) return Promise.reject("can't find user")
 
     user = { ...user }
@@ -27,7 +27,9 @@ function getById(userId) {
 }
 
 function getByUsername(username) {
-    var user = users.find(user => user.username === username)
+    var user = users.find(user => {
+        return user.username === username;
+    })
     return Promise.resolve(user)
 }
 
@@ -36,7 +38,6 @@ function add(user) {
         .then(existingUser => {
             if (existingUser) return Promise.reject('User Name Already exist try a different one')
             user._id = makeId()
-
             users.push(user)
 
             return _saveUsersToFile()
@@ -53,8 +54,8 @@ function add(user) {
 }
 
 function remove(userId) {
-    if (!users.some(user=> user._id === userId)) return Promise.reject(`Didn't find user ${userId}`)
-      users = users.filter(user => user._id !== userId)
+    if (!users.some(user => user._id === userId)) return Promise.reject(`Didn't find user ${userId}`)
+    users = users.filter(user => user._id !== userId)
     return _saveUsersToFile()
 }
 
