@@ -1,20 +1,23 @@
 [
-{
+    {
         "_id": "u1a3b7",
         "username": "Alice",
         "fullname": "Alice Smith",
+        "password": "111",
         "isAdmin": true
     },
     {
         "_id": "v9k4m2",
-        "username": "Bob ",
+        "username": "Bob",
         "fullname": "Bob Johnson",
+        "password": "222",
         "isAdmin": false
     },
     {
         "_id": "x8p6q1",
         "username": "Charlie",
         "fullname": "Charlie Brown",
-        "isAdmin": true
+        "password": "333",
+        "isAdmin": false
     }
-  ]
+]

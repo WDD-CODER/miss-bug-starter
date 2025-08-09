@@ -1,50 +1,80 @@
 [
     {
-        "title": "Login button unresponsive on mobile",
-        "severity": 4,
-        "description": "Clicking the login button on small screens does nothing.",
-        "labels": ["critical"],
-        "_id": "hY82kd",
-        "createdAt": 1754610001000
-    },
-    {
-        "title": "Profile picture not saving",
+        "title": "Login button unresponsive",
         "severity": 2,
-        "description": "Uploading a new profile picture shows success but reverts after refresh.",
-        "labels": ["dev-branch"],
-        "_id": "pG73js",
-        "createdAt": 1754610002000
+        "labels": ["UI", "urgent"],
+        "creator": {
+            "_id": "u1a3b7",
+            "username": "Alice",
+            "fullname": "Alice Smith",
+            "isAdmin": true
+        },
+        "_id": "bugA1",
+        "createdAt": 1754749000000
     },
     {
-        "title": "Checkout page stuck at loading spinner",
-        "severity": 8,
-        "description": "Customers cannot complete purchases due to endless loading.",
-        "labels": ["critical", "need-CR"],
-        "_id": "mF29lp",
-        "createdAt": 1754610003000
+        "title": "Profile picture upload fails",
+        "severity": 4,
+        "labels": ["media"],
+        "creator": {
+            "_id": "u1a3b7",
+            "username": "Alice",
+            "fullname": "Alice Smith",
+            "isAdmin": true
+        },
+        "_id": "bugA2",
+        "createdAt": 1754749600000
+    },
+    {
+        "title": "Search results missing recent items",
+        "severity": 3,
+        "labels": ["search", "data"],
+        "creator": {
+            "_id": "v9k4m2",
+            "username": "Bob",
+            "fullname": "Bob Johnson",
+            "isAdmin": false
+        },
+        "_id": "bugB1",
+        "createdAt": 1754750200000
     },
     {
         "title": "Email notifications sent twice",
+        "severity": 1,
+        "labels": ["notifications"],
+        "creator": {
+            "_id": "v9k4m2",
+            "username": "Bob",
+            "fullname": "Bob Johnson",
+            "isAdmin": false
+        },
+        "_id": "bugB2",
+        "createdAt": 1754750800000
+    },
+    {
+        "title": "Dark mode text contrast too low",
         "severity": 5,
-        "description": "Each event triggers two identical email alerts to the same user.",
-        "labels": ["need-CR"],
-        "_id": "aQ81zn",
-        "createdAt": 1754610004000
+        "labels": ["UI", "accessibility"],
+        "creator": {
+            "_id": "x8p6q1",
+            "username": "Charlie",
+            "fullname": "Charlie Brown",
+            "isAdmin": true
+        },
+        "_id": "bugC1",
+        "createdAt": 1754751400000
     },
     {
-        "title": "Search results not updating after filter",
-        "severity": 3,
-        "description": "Changing the filter shows old results until the page is refreshed.",
-        "labels": ["dev-branch"],
-        "_id": "kL47bv",
-        "createdAt": 1754610005000
-    },
-    {
-        "title": "Reports exporting in wrong date format",
-        "severity": 6,
-        "description": "Exported CSV files show dates in US format instead of selected locale.",
-        "labels": ["critical"],
-        "_id": "cD65qw",
-        "createdAt": 1754610006000
+        "title": "Payment form freezes on submit",
+        "severity": 4,
+        "labels": ["checkout", "urgent"],
+        "creator": {
+            "_id": "x8p6q1",
+            "username": "Charlie",
+            "fullname": "Charlie Brown",
+            "isAdmin": true
+        },
+        "_id": "bugC2",
+        "createdAt": 1754752000000
     }
 ]
