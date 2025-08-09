@@ -6,7 +6,7 @@ import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
 
 
-export function BugIndex() {
+export function BugIndex({ loggedinUser }) {
     const [bugs, setBugs] = useState(null)
     const [sumOfBugs, setSumOfBugs] = useState()
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
@@ -30,7 +30,7 @@ export function BugIndex() {
 
     function loadBugs() {
         bugService.query(filterBy)
-        .then(res => {
+            .then(res => {
                 setSumOfBugs(res.length)
                 return setBugs(res)
             })
@@ -54,7 +54,7 @@ export function BugIndex() {
             severity: +prompt('Bug severity?', 3),
             description: prompt('What Happened?', 'What did the bug cause'),
             createdAt: Date.now(),
-            labels:[]
+            labels: []
         }
 
         bugService.save(bug)
@@ -73,8 +73,7 @@ export function BugIndex() {
 
         bugService.save(bugToSave)
             .then(savedBug => {
-                const bugsToUpdate = bugs.map(currBug =>
-                    currBug._id === savedBug._id ? savedBug : currBug)
+                const bugsToUpdate = bugs.map(bug => bug._id === savedBug._id ? savedBug : bug)
                 setBugs(bugsToUpdate)
                 showSuccessMsg('Bug updated')
             })
@@ -110,6 +109,7 @@ export function BugIndex() {
     }
 
     function onRemoveLabel(bug, labelToRemove) {
+        if (bug.creator._id !== loggedinUser._id) return showErrorMsg('This is not your bug. You cannot update it')
         const labelIdx = bug.labels.findIndex(label => label === labelToRemove)
         bug.labels.splice(labelIdx, 1)
         const bugIdx = bugs.findIndex(curBug => curBug._id === bug._id)
@@ -171,6 +171,7 @@ export function BugIndex() {
         </header>
 
         <BugList
+            loggedinUser={loggedinUser}
             bugs={bugs}
             onRemoveBug={onRemoveBug}
             onEditBug={onEditBug}

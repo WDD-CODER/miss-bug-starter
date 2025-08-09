@@ -8,7 +8,6 @@ export function BugDetails() {
 
     const [bug, setBug] = useState(null)
     const { bugId } = useParams()
-    console.log("🚀 ~ BugDetails ~ bugId:", bugId)
 
     useEffect(() => {
         bugService.getById(bugId)

@@ -1,5 +1,8 @@
 import { userService } from './user.service.remote.js'
 
+const STORAGE_KEY_LOGGEDIN_USER = 'loggedInUser'
+const BASE_URL = '/api/auth/'
+
 export const authService = {
     login,
     signup,
@@ -7,14 +10,11 @@ export const authService = {
     getLoggedinUser,
 }
 
-const BASE_URL = '/api/auth/'
 
 function login({ username, password }) {
-    return axios.get(BASE_URL, { params: username })
-        .then(user => {
-            if (user && user.password === password) return _setLoggedinUser(user)
-            return Promise.reject('Invalid login')
-        })
+    return axios.post(BASE_URL + 'login', { username, password })
+        .then(res =>  res.data)
+        .then(_setLoggedinUser) 
 }
 
 function signup(user) {

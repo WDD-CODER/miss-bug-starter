@@ -17,7 +17,7 @@ function query(filterBy) {
         .then(res => res.data)
 }
 
-function onDownloadPDF(filterBy) {    
+function onDownloadPDF(filterBy) {
     return axios.get('file/pdf', { params: filterBy })
         .then(res => res.data)
 
@@ -35,7 +35,7 @@ function remove(bugId) {
 
 function save(bug) {
     if (bug._id) {
-        return axios.put(BASE_URL, bug).then(res => res.data).catch(console.error)
+        return axios.put(BASE_URL + bug._id, bug).then(res => res.data).catch(console.error)
     } else {
         return axios.post(BASE_URL, bug).then(res => res.data).catch(console.error)
     }
