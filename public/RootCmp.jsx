@@ -12,7 +12,6 @@ import { authService } from './services/auth.service.remote.js'
 import { LoginSignup } from './pages/LoginSignup.jsx'
 
 const { useState } = React
-// console.log("authService:", authService)
 
 export function App() {
     const [loggedinUser, setLoggedinUser] = useState(authService.getLoggedinUser())
@@ -26,7 +25,7 @@ export function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/auth" element={<LoginSignup setLoggedinUser={setLoggedinUser} />} />
-                    <Route path="/bug" element={<BugIndex />} />
+                    <Route path="/bug" element={<BugIndex loggedinUser={loggedinUser} />} />
                     <Route path="/bug/:bugId" element={<BugDetails />} />
                     <Route path="/about" element={<AboutUs />} />
                 </Routes>
