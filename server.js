@@ -6,6 +6,7 @@ import { bugService } from './services/bugs.service.js'
 import { loggerService } from './services/logger.service.js'
 import { onCreatePdf } from './public/services/onCreatePdf.js'
 import { userService } from './services/user.service.js'
+import { authService } from './services/auth.service.js'
 
 const app = express()
 
@@ -37,6 +38,9 @@ app.get('/api/bug', (req, res) => {
 
 
 app.post('/api/bug', (req, res) => {
+    const loggedinUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedinUser) return res.status(401).send('Cannot add bug')
+
     loggerService.debug('req.body', req.body)
 
     const { title, severity, description, labels = [] } = req.body
@@ -44,7 +48,8 @@ app.post('/api/bug', (req, res) => {
         title: title || 'No Title',
         severity: +severity,
         description,
-        labels
+        labels,
+        creator: loggedinUser
     }
 
     bugService.save(bug)
@@ -55,16 +60,25 @@ app.post('/api/bug', (req, res) => {
         })
 })
 
-app.put('/api/bug', (req, res) => {
+app.put('/api/bug/:bugId', (req, res) => {
+    const loggedinUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedinUser) return res.status(401).send('Cannot update car')
+
     loggerService.debug('req.body', req.body)
 
-    const { title, severity, _id, description, labels = [] } = req.body
+    const { title, severity, description, labels = [], creator } = req.body
+
+    if ( !loggedinUser.isAdmin || creator.username !== loggedinUser.username ) {
+        return res.status(401).send(' This is not your Bug. You cannot update it')
+    }
+    
     const bug = {
-        title: title || 'No Title',
-        severity: +severity,
-        _id,
+        title,
+        severity,
+        _id: req.params.bugId,
         description,
-        labels
+        labels,
+        creator
     }
 
     bugService.save(bug)
@@ -103,17 +117,6 @@ app.delete('/api/bug/:bugId', (req, res) => {
         })
 })
 
-app.delete('/cookie', (req, res) => {
-    res.clearCookie('visitedBugs')
-    res.send(`We've cleared your seen bugs count. You can see more now`)
-})
-
-app.get('/cookie', (req, res) => {
-    const visitedBugs = req.cookies.visitedBugs
-    res.send(visitedBugs)
-})
-
-
 
 app.get('/file/pdf', (req, res) => {
     const filter = {
@@ -139,8 +142,6 @@ app.get('/file/pdf', (req, res) => {
 
 // USER API
 app.get('/api/user', (req, res) => {
-    console.log('/api/user')
-
     userService.query()
         .then(users => res.send(users))
         .catch(err => {
@@ -191,8 +192,57 @@ app.delete('/api/user/:userId', (req, res) => {
         })
 })
 
-/////////////////////////////////////////////////////////
+// AUTH API 
+app.post('/api/auth/login', (req, res) => {
+    const credentials = req.body
 
+    authService.checkLogin(credentials)
+        .then(user => {
+            const loginToken = authService.getLoginToken(user)
+            res.cookie('loginToken', loginToken)
+            res.send(user)
+        })
+        .catch(() => {
+            loggerService.error(`Couldn't login user ${credentials}`)
+            res.status(404).send('Invalid Credentials')
+        })
+})
+
+app.post('/api/auth/signup', (req, res) => {
+    loggerService.debug('req.body', req.body)
+
+    const credentials = req.body
+
+    userService.add(credentials)
+        .then(user => {
+            if (user) {
+                const loginToken = authService.getLoginToken(user)
+                res.cookie('loginToken', loginToken)
+                res.send(user)
+            }
+            else res.status(400).res.send('cannot signup')
+        })
+        .catch(err => {
+            loggerService.error(`Couldn't add user ${credentials}`)
+            res.status(400).send(err)
+        })
+
+
+})
+
+// COOKIES API
+
+app.delete('/cookie', (req, res) => {
+    res.clearCookie('visitedBugs')
+    res.send(`We've cleared your seen bugs count. You can see more now`)
+})
+
+app.get('/cookie', (req, res) => {
+    const visitedBugs = req.cookies.visitedBugs
+    res.send(visitedBugs)
+})
+
+// GENERAL API
 
 app.get('*all', (req, res) => {
     res.sendFile(path.resolve('public', 'index.html'))
