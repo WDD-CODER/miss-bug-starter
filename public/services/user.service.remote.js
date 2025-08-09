@@ -1,28 +1,28 @@
+const BASE_URL = '/api/user/'
 
 
 export const userService = {
     query,
     getById,
-    getByUsername,
+    // getByUsername,
     add,
     getEmptyCredentials,
 }
 
-const BASE_URL = '/'
 
 function query() {
-    return axios.get(BASE_URL)
+    return axios.get(BASE_URL).then(res => res.data)
 }
 
 function getById(userId) {
-    return axios.get(BASE_URL, userId)
+    return axios.get(BASE_URL + userId).then(res => res.data)
 }
 
-function getByUsername(username) {
-    return axios.get(BASE_URL, username)
-        .then(users => users.find(user => user.username === username))
+// function getByUsername(username) {
+//     return axios.get(BASE_URL + username)
+//         .then(users => users.find(user => user.username === username))
         
-}
+// }
 
 function add(user) {
     const { username, password, fullname } = user
