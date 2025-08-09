@@ -1,6 +1,5 @@
 import Cryptr from 'cryptr'
-import { userService } from '../public/services/user.service.remote.js'
-import { promises } from 'dns'
+import { userService } from './user.service.js'
 
 const cryptr = new Cryptr(process.env.SECRET1 || 'secret')
 
@@ -12,21 +11,27 @@ export const authService = {
 }
 
 function checkLogin({ username, password }) {
-    userService.getByUsername(username)
-        .then(user => {
-            if (user && user.password === password) {
-                user = { ...user }
-                delete user.password
-                return promises.resolve(user)
+    return userService.getByUsername(username)
+    .then(user => {
+        if (user && user.password === password) {
+            user = { ...user }
+            delete user.password
+                return Promise.resolve(user)
             }
             return Promise.reject()
         })
 }
 
-function getLoginToken() {
-
+function getLoginToken(user) {
+	const str = JSON.stringify(user)
+	const encryptedStr = cryptr.encrypt(str)
+	return encryptedStr
 }
 
-function validateToken() {
-
+function validateToken(token) {
+	if (!token) return null
+    
+	const str = cryptr.decrypt(token)
+	const user = JSON.parse(str)
+	return user
 }
